@@ -2,6 +2,7 @@
 
 var ejs = require('ejs');
 
+/*  */
 function renderHomePage(courseName, courseId, courseClass) {
     var homePageTemplate = require('../views/homePage.ejs')
     var homePage = ejs.render(homePageTemplate, {

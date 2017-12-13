@@ -20,9 +20,12 @@ router.get('/', function (req, res, next) {
 });
 
 /* Handle LTI launch */
+/* This uses the Content Item service which is documented here: 
+   https://canvas.instructure.com/doc/api/file.content_item.html */
 router.post('/', function (req, res, next) {
   var ltiParams = req.session.lti.params
-  var courseClass = ltiParams.context_label.toLowerCase().replace(" ", "") //PSYCH 342T
+  /* prepare the class (B 380 -> b380) */
+  var courseClass = ltiParams.context_label.toLowerCase().replace(" ", "")
   var courseNumber = (ltiParams.content_item_return_url).split('/')[4];
   var courseName = ltiParams.context_title;
   var homePage = generation.renderHomePage(courseName, courseNumber, courseClass);
@@ -48,6 +51,7 @@ router.post('/', function (req, res, next) {
   })
 })
 
+/* return the templates to the interface for the course */
 router.get('/templates', function (req, res, next) {
   if (!req.session.lti || process.env.IsHeroku) {
     res.status(400).send({
@@ -65,6 +69,7 @@ router.get('/templates', function (req, res, next) {
   }
 })
 
+/* get the template to preview in the tool */
 router.get('/preview', function (req, res, next) {
   var url = req.query.url;
   canvas.getFile(url).then(function (file) {

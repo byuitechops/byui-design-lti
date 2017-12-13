@@ -14,6 +14,7 @@ var auth = {
   }
 }
 
+/* build the url to look for course level templates */
 function getTemplateFolderId(courseNumber) {
   return new Promise(function (resolve, reject) {
     request(domain + '/api/v1/courses/' + courseNumber + '/folders', auth, function (err, data, body) {
@@ -30,6 +31,7 @@ function getTemplateFolderId(courseNumber) {
   })
 }
 
+/* return all of the files in a given directory */
 function getFilesByFolder(folderId) {
   return new Promise(function (resolve, reject) {
     request(domain + '/api/v1/folders/' + folderId + '/files', auth, function (err, data, body) {
@@ -40,6 +42,7 @@ function getFilesByFolder(folderId) {
   })
 }
 
+/* return the file at a certain url in Canvas */
 function getFile(url) {
   return new Promise(function (resolve, reject) {
     request(url, auth, function (err, data, body) {
@@ -50,6 +53,7 @@ function getFile(url) {
   })
 }
 
+/* return all of the modules in a course */
 function getModules(courseNumber){
   return new Promise(function(resolve, reject){
     request(domain + '/api/v1/courses/' + courseNumber + '/modules', auth, function(err, data, body){
