@@ -26,10 +26,12 @@ $('#button input:checkbox').change(updateButton)
 // Change pages
 function changeFocus(id) {
   if (!$("#" + id).hasClass('visible')) {
-    $('.page').toggleClass('visible')
-    if (id === 'pageTwo' && $.trim($('#templates').html()) === "") {
-      loadTemplates();
-    }
+    $('.page').removeClass('visible')
+    $("#" + id).addClass('visible')
+  }
+  
+  if (id === 'pageTwo' && $.trim($('#templates').html()) === "") {
+    loadTemplates();
   }
 }
 
@@ -110,4 +112,3 @@ $(document).ready(function () {
 $('#selectTemplate').on("change", function () {
   $('#orgTemplateOut').html($('#template_' + this.value).html())
 })
-
