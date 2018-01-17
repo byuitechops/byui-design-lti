@@ -11,7 +11,8 @@
     <link type="text/css" rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_107060000000000001/attachments/144140/byui.css">
     <!--Below is the link to the global css, which may need updated in the future-->
     <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/wiki_page-46e7e026f6.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link type="text/css" rel="stylesheet" href="/stylesheets/features.css">
     <style>
@@ -19,7 +20,6 @@
             --theme-dark: #0076b6;
             --theme-light: #BDE9FF;
         }
-
     </style>
 </head>
 
@@ -35,12 +35,13 @@
     <div id="article">
         <div id="pageOne" class="page visible">
             <nav>
-                <a>Button</a>
+                <a href="#button">Button</a>
                 <a href="#banner">Activity Banner</a>
-                <a>Accordian</a>
-                <a>Callout</a>
-                <a>Table</a>
-                <a>Columns</a>
+                <a href="#accordion">Accordion</a>
+                <a href="#callout">Callout</a>
+                <a href="#columns">Columns</a>
+                <a href="#contentBox">Content Box</a>
+                <a href="#bannerImg">Banner Image</a>
             </nav>
             <h3>Select the feature you would like to insert</h3>
 
@@ -70,7 +71,7 @@
                 </div>
 
                 <div id="banner">
-                    <h2>Banner</h2>
+                    <h2>Activity Banner</h2>
                     <div>
                         <p>Red Tape. Yay! How long can this get? </p>
                     </div>
@@ -125,9 +126,6 @@
                     </div>
                 </div>
 
-
-
-
                 <div id="accordion">
                     <h2>Accordion</h2>
                     <div>
@@ -152,8 +150,6 @@
                     </div>
                 </div>
 
-
-
                 <div id="callout">
                     <h2>Callout</h2>
                     <div>
@@ -163,9 +159,19 @@
                         <div class="option">
                         </div>
                         <div class="preview">
-                            <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
-                                <span id="calloutOut"><span class="pad-box-mini border border-trbl border-round right quarter"><em>This is a callout box which can be used to emphasize text.</em></span></span>
-                                facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                                augue duis dolore te feugait nulla
+                                <span id="calloutOut">
+                                    <span class="pad-box-mini border border-trbl border-round right quarter">
+                                        <em>This is a callout box which can be used to emphasize text.</em>
+                                    </span>
+                                </span>
+                                facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+                                odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                facilisi.
+                            </p>
                         </div>
                     </div>
                     <div>
@@ -246,13 +252,12 @@
                 </div>
 
                 <div id="contentBox">
-                    <h2>Columns</h2>
+                    <h2>Content Box</h2>
                     <div>
                         <p>Guidelines</p>
                     </div>
                     <div class="row">
                         <div class="option">
-                            <a class="Button btn btn-primary" href="#" onclick="respond('contentBox')">Insert Content Box</a>
                         </div>
                         <div class="preview" id="contentBoxOut">
                             <div class="content-box pad-box-mini border border-trbl border-round">
@@ -260,15 +265,29 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row" id="bannerImg">
-                    <div class="option">
-                        <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('contentBox')">Insert Content Box</a>
                     </div>
-                    <div class="preview" id="bannerImgOut">
-                        <div id="header">
-                            <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/template/banner.jpg" alt="Course Banner" />
+                </div>
+
+                <div id="bannerImg">
+                    <h2>Banner Image</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+
+                        <div class="option">
                         </div>
+                        <div class="preview" id="bannerImgOut">
+                            <div id="header">
+                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/template/banner.jpg" alt="Course Banner"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
                     </div>
                 </div>
             </div>
@@ -360,22 +379,52 @@
             </div>
             <div class="preview" id="templateSmallOut">
                 <div class="byui <%= courseClass %>">
-                    <div id="header"><img src="https://byui.instructure.com/courses/773/files/129575/preview" alt="Banner" width="3000" height="272" data-api-endpoint="https://byui.instructure.com/api/v1/courses/773/files/129575" data-api-returntype="File" /></div>
+                    <div id="header">
+                        <img src="https://byui.instructure.com/courses/773/files/129575/preview" alt="Banner" width="3000" height="272" data-api-endpoint="https://byui.instructure.com/api/v1/courses/773/files/129575"
+                            data-api-returntype="File" />
+                    </div>
                     <h2>Heading 2</h2>
                     <h3>Heading 3</h3>
                     <h4>Heading 4</h4>
                     <p>*As a note, The editor does not use heading 1, as the page title occupies that role.
-                        <br />Congratulations on making it to week 1! There hasn't been a lot required of you up to this point, in fact, nothing!</p>
+                        <br />Congratulations on making it to week 1! There hasn't been a lot required of you up to this point,
+                        in fact, nothing!</p>
                     <h2 class="activity readings">Readings</h2>
-                    <p><a class="Button Button--primary" href="#">Primary Button</a></p>
-                    <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span class="byui-popover" title="Put your desired text here." data-tooltip="{&quot;tooltipClass&quot;:&quot;popover popover-padded&quot;, &quot;position&quot;:&quot;right&quot;}">pop-up</span> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="pad-box-mini border border-trbl border-round right quarter"><em>This is a callout box which can be used to emphasize text.</em></span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                    <p>
+                        <a class="Button Button--primary" href="#">Primary Button</a>
                     </p>
-                    <p><span><img id="demoImage" class="left quarter" style="max-width: 600px;" src="https://content.byui.edu/file/e7de5943-5a1e-4a64-bbea-ab36a5e21d44/21/McKayLibrary.jpg" alt="McKay Library" /><span id="demoCaption" class="caption">Insert Caption Text Here</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    <p>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <span class="byui-popover" title="Put your desired text here." data-tooltip="{&quot;tooltipClass&quot;:&quot;popover popover-padded&quot;, &quot;position&quot;:&quot;right&quot;}">pop-up</span> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <span class="pad-box-mini border border-trbl border-round right quarter">
+                                <em>This is a callout box which can be used to emphasize text.</em>
+                            </span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</span>
                     </p>
-                    <p><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    <p>
+                        <span>
+                            <img id="demoImage" class="left quarter" style="max-width: 600px;" src="https://content.byui.edu/file/e7de5943-5a1e-4a64-bbea-ab36a5e21d44/21/McKayLibrary.jpg"
+                                alt="McKay Library" />
+                            <span id="demoCaption" class="caption">Insert Caption Text Here</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </span>
+                    </p>
+                    <p>
+                        <span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                            id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</span>
+                    </p>
                     <div id="this_page_1" class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
-                        <h3 id="ui-id-1" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" aria-controls="ui-id-2" aria-expanded="false" aria-selected="false">Example Dropdown</h3>
-                        <div id="ui-id-2" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" role="tabpanel" aria-labelledby="ui-id-1" aria-hidden="true">This is the content</div>
+                        <h3 id="ui-id-1" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+                            role="tab" aria-controls="ui-id-2" aria-expanded="false" aria-selected="false">Example Dropdown</h3>
+                        <div id="ui-id-2" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;"
+                            role="tabpanel" aria-labelledby="ui-id-1" aria-hidden="true">This is the content</div>
                     </div>
                 </div>
             </div>
@@ -387,7 +436,6 @@
         var contentItems = <%- contentItems %>;
         var returnUrl = "<%= returnUrl %>"
         var courseNumber = "<%= courseNumber %>"
-
     </script>
     <script src="/javascripts/features.js"></script>
 </body>

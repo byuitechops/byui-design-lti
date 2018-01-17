@@ -3,42 +3,52 @@
     align-items: flex-start;
     padding: 5px;
 }
+
 .option,
-.row > div,
-.row > p {
+.row>div,
+.row>p {
     margin: 10px 20px;
     box-sizing: border-box;
 }
+
 .option,
-.row > p {
+.row>p {
     min-width: 25%;
     width: 25%;
     max-width: 25%;
 }
+
 .preview {
     flex-grow: 1;
 }
+
 #article {
     padding: 20px;
 }
+
 input[type="text"],
 select,
 textarea {
     width: 100%;
     margin: 10px 0 0;
 }
+
 textarea {
     resize: vertical;
 }
+
 #article #header {
     display: block !important;
 }
+
 .page {
     display: none;
 }
+
 .page.visible {
     display: block;
 }
+
 nav {
     display: flex;
     position: fixed;
@@ -49,30 +59,35 @@ nav {
     justify-content: space-around;
     z-index: 9999999;
 }
+
 .tab {
     flex-grow: 1;
     text-align: center;
-    background: #0C4496;
+    background: #0076c6;
     color: #fff;
     height: 40px;
 }
+
 .tab:hover,
 .tab:active,
 .tab:visited {
     color: white;
 }
-.embedded > #article {
+
+.embedded>#article {
     height: calc(100vh - 80px);
     overflow-y: auto;
 }
+
 .margin {
     margin: 5px 0;
 }
 
+
 /* Not Ben's CSS */
 
 .page nav {
-    background-color: cornflowerblue;
+    background-color: #525252;
     position: fixed;
     margin-top: 0px;
     padding: 5px;
@@ -82,6 +97,7 @@ nav {
     justify-content: space-around;
     z-index: 9999999;
 }
+
 .page nav a {
     color: white;
 }
@@ -90,19 +106,28 @@ nav {
     margin-top: 15px;
 }
 
-.features > div {
+.features>div {
     border-bottom: #ccc solid 1px;
 }
 
-.features > div > div:last-child {
+.features>div>h2 {
+    padding-top: 77px;
+    margin-top: -77px;
+}
+
+.features>div>div:last-child {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 12px;
 }
 
 .option {
-/*    border-right: #ccc solid 1px;*/
+    /*    border-right: #ccc solid 1px;*/
     padding-right: 30px;
     padding-bottom: 8px;
     margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: #0075c5;
 }
