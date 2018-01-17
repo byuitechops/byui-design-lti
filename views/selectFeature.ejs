@@ -3,240 +3,316 @@
 <html>
 
 <head>
-  <title>Page Title</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/82d059ca224b79f71841c76bfb9c7b7c/variables-750d72b9d3e5d522f965bf904110c132.css">
-  <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-688b35b63b.css">
-  <link type="text/css" rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_107060000000000001/attachments/144140/byui.css">
-  <!--Below is the link to the global css, which may need updated in the future-->
-  <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/wiki_page-46e7e026f6.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <link type="text/css" rel="stylesheet" href="/stylesheets/features.css">
-  <style>
-    .byui {
-      --theme-dark: #0076b6;
-      --theme-light: #BDE9FF;
-    }
-  </style>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/82d059ca224b79f71841c76bfb9c7b7c/variables-750d72b9d3e5d522f965bf904110c132.css">
+    <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-688b35b63b.css">
+    <link type="text/css" rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_107060000000000001/attachments/144140/byui.css">
+    <!--Below is the link to the global css, which may need updated in the future-->
+    <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/wiki_page-46e7e026f6.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/features.css">
+    <style>
+        .byui {
+            --theme-dark: #0076b6;
+            --theme-light: #BDE9FF;
+        }
+
+    </style>
 </head>
 
 <body class="is-inside-submission-frame" style="min-width: 500px;">
-  <nav>
-    <a class="tab" href='#' onclick="changeFocus('pageOne')">
-      <h4>BYU-I Features</h4>
-    </a>
-    <a class="tab" href='#' onclick="changeFocus('pageTwo')">
-      <h4>BYU-I Templates</h4>
-    </a>
-    <a class="tab" href="#" onclick="changeFocus('pageThree')">
-      <h4>Course Templates</h4>
-    </a>
-  </nav>
-  <div id="article">
-    <div id="pageOne" class="page visible">
-      <h3>Select the feature you would like to insert</h3>
-      <div class="row">
-        <p>Feature</p>
-        <p>Preview</p>
-      </div>
-      
-      <div class="row" id="button">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('button')">Insert Button</a>
-          <input type="text" placeholder="Button Text" oninput="updateButton()">
-          <input type="text" placeholder="Button HTML" oninput="updateButton()">
-          <input type="checkbox" id="blue">
-          <label for="blue">Make Primary?</label>
-        </div>
-        <div class="preview" id="buttonOut">
-          <a class="Button" href="#">Button Text</a>
-        </div>
-      </div>
-      <div class="row" id="banner">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('banner')">Insert Activity Banner</a>
-          <select id="activitySelected">
-            <optgroup label="Prepare">
-              <option value="prepare caseStudy">Case Study</option>
-              <option value="prepare checkUnderstanding">Check-Your-Understanding</option>
-              <option value="prepare preAssessment">Pre-Assessment</option>
-              <option value="prepare readings">Readings</option>
-              <option value="prepare research">Research</option>
-              <option value="prepare video">Video</option>
-            </optgroup>
-            <optgroup label="Teach One Another">
-              <option value="teach caseStudy">Case Study</option>
-              <option value="teach fieldExperience">Field Experience Sharing</option>
-              <option value="teach groupPresentation">Group Presentation</option>
-              <option value="teach groupProblemSolving">Group Problem Solving</option>
-              <option value="teach groupProject">Group Project</option>
-              <option value="teach iceBreaker">Ice-Breaker</option>
-              <option value="teach insightSharing">Insight Sharing</option>
-              <option value="teach jigsawActivity">Jigsaw Activity</option>
-              <option value="teach peerAccountability">Peer Accountability</option>
-              <option value="teach peerFeedback">Peer Feedback</option>
-              <option value="teach rolePlayDiscussion">Role Play Discussion</option>
-              <option value="teach structuredDebate">Structured Debate</option>
-              <option value="teach studyGroup">Study Group</option>
-              <option value="teach supportForum">Support Forum</option>
-              <option value="teach topicDiscussion">Topic Discussion</option>
-            </optgroup>
-            <optgroup label="Ponder and Prove">
-              <option value="ponder assessment">Assessment</option>
-              <option value="ponder demonstrateProficiency">Demonstrate Proficiency</option>
-              <option value="ponder practiceApply">Practice/Apply</option>
-              <option value="ponder presentation">Presentation</option>
-              <option value="ponder reflection">Reflection</option>
-            </optgroup>
-            <optgroup label="Other">
-              <option value="other">Other</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="preview">
-          <div class="byui" id="bannerOut">
-            <h2 class="activity caseStudy">Case Study</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="accordion">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('accordion')">Insert Accordion</a>
-          <input type="text" placeholder="Heading Text" onkeyup="updateAccordion()">
-          <textarea placeholder="Content Text" onkeyup="updateAccordion()"></textarea>
-        </div>
-        <div class="preview" id="accordionOut">
-          <div class="accordion" id="this_page_1">
-            <h3>Section 1</h3>
-            <div>
-              <p>Content for Section 1</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="callout">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('callout')">Insert Callout</a>
-        </div>
-        <div class="preview">
-          <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
-            <span id="calloutOut"><span class="pad-box-mini border border-trbl border-round right quarter"><em>This is a callout box which can be used to emphasize text.</em></span></span>
-            facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('table')">Insert Table</a>
-        </div>
-        <div class="preview" id="table">
-          <table class="ic-Table">
-            <tbody>
-              <tr>
-                <th>Heading</th>
-                <th>Heading</th>
-                <th>Heading</th>
-              </tr>
-              <tr>
-                <td>Text</td>
-                <td>Text</td>
-                <td>Text</td>
-              </tr>
-              <tr>
-                <td>Text</td>
-                <td>Text</td>
-                <td>Text</td>
-              </tr>
-              <tr>
-                <td>Text</td>
-                <td>Text</td>
-                <td>Text</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="row" id="columns">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('columns')">Insert Columns</a>
-        </div>
-        <div class="preview" id="columnsOut">
-          <div class="content-box">
-            <div class="grid-row">
-              <div class="col-xs-6">
-                <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                </ul>
-              </div>
-              <div class="col-xs-6">
-                <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="contentBox">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('contentBox')">Insert Content Box</a>
-        </div>
-        <div class="preview" id="contentBoxOut">
-          <div class="content-box pad-box-mini border border-trbl border-round">
-            <p>Your content here</p>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="bannerImg">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
-        </div>
-        <div class="preview" id="bannerImgOut">
-          <div id="header">
-            <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/template/banner.jpg" alt="Course Banner" />
-          </div>
-        </div>
-      </div>
+    <nav>
+        <a class="tab" href='#' onclick="changeFocus('pageOne')">
+            <h4>Web Features</h4>
+        </a>
+        <a class="tab" href='#' onclick="changeFocus('pageTwo')">
+            <h4>Page Templates</h4>
+        </a>
+    </nav>
+    <div id="article">
+        <div id="pageOne" class="page visible">
+            <nav>
+                <a>Button</a>
+                <a href="#banner">Activity Banner</a>
+                <a>Accordian</a>
+                <a>Callout</a>
+                <a>Table</a>
+                <a>Columns</a>
+            </nav>
+            <h3>Select the feature you would like to insert</h3>
 
-      <!--  update the row id="-------", onclick parameter, the id on the preview, and the inner HTML in the preview
+            <div class="features">
+                <div id="button">
+                    <h2>Button</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="option">
+                            <input type="text" placeholder="Button Text" oninput="updateButton()">
+                            <input type="text" placeholder="Button HTML" oninput="updateButton()">
+                            <input type="checkbox" id="blue">
+                            <label for="blue">Make Primary?</label>
+                        </div>
+                        <div>
+                            <div class="preview" id="buttonOut">
+                                <a class="Button" href="#">Button Text</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('button')">Insert Button</a>
+                    </div>
+                </div>
+
+                <div id="banner">
+                    <h2>Banner</h2>
+                    <div>
+                        <p>Red Tape. Yay! How long can this get? </p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <select id="activitySelected">
+                                <optgroup label="Prepare">
+                                    <option value="prepare caseStudy">Case Study</option>
+                                    <option value="prepare checkUnderstanding">Check-Your-Understanding</option>
+                                    <option value="prepare preAssessment">Pre-Assessment</option>
+                                    <option value="prepare readings">Readings</option>
+                                    <option value="prepare research">Research</option>
+                                    <option value="prepare video">Video</option>
+                                </optgroup>
+                                <optgroup label="Teach One Another">
+                                    <option value="teach caseStudy">Case Study</option>
+                                    <option value="teach fieldExperience">Field Experience Sharing</option>
+                                    <option value="teach groupPresentation">Group Presentation</option>
+                                    <option value="teach groupProblemSolving">Group Problem Solving</option>
+                                    <option value="teach groupProject">Group Project</option>
+                                    <option value="teach iceBreaker">Ice-Breaker</option>
+                                    <option value="teach insightSharing">Insight Sharing</option>
+                                    <option value="teach jigsawActivity">Jigsaw Activity</option>
+                                    <option value="teach peerAccountability">Peer Accountability</option>
+                                    <option value="teach peerFeedback">Peer Feedback</option>
+                                    <option value="teach rolePlayDiscussion">Role Play Discussion</option>
+                                    <option value="teach structuredDebate">Structured Debate</option>
+                                    <option value="teach studyGroup">Study Group</option>
+                                    <option value="teach supportForum">Support Forum</option>
+                                    <option value="teach topicDiscussion">Topic Discussion</option>
+                                </optgroup>
+                                <optgroup label="Ponder and Prove">
+                                    <option value="ponder assessment">Assessment</option>
+                                    <option value="ponder demonstrateProficiency">Demonstrate Proficiency</option>
+                                    <option value="ponder practiceApply">Practice/Apply</option>
+                                    <option value="ponder presentation">Presentation</option>
+                                    <option value="ponder reflection">Reflection</option>
+                                </optgroup>
+                                <optgroup label="Other">
+                                    <option value="other">Other</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="preview">
+                            <div class="byui" id="bannerOut">
+                                <h2 class="activity caseStudy">Case Study</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('banner')">Insert Activity Banner</a>
+                    </div>
+                </div>
+
+
+
+
+                <div id="accordion">
+                    <h2>Accordion</h2>
+                    <div>
+                        <p>Some stuff</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <input type="text" placeholder="Heading Text" onkeyup="updateAccordion()">
+                            <textarea placeholder="Content Text" onkeyup="updateAccordion()"></textarea>
+                        </div>
+                        <div class="preview" id="accordionOut">
+                            <div class="accordion" id="this_page_1">
+                                <h3>Section 1</h3>
+                                <div>
+                                    <p>Content for Section 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('accordion')">Insert Accordion</a>
+                    </div>
+                </div>
+
+
+
+                <div id="callout">
+                    <h2>Callout</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                        </div>
+                        <div class="preview">
+                            <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                <span id="calloutOut"><span class="pad-box-mini border border-trbl border-round right quarter"><em>This is a callout box which can be used to emphasize text.</em></span></span>
+                                facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('callout')">Insert Callout</a>
+                    </div>
+                </div>
+
+                <div id="table">
+                    <h2>Table</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                        </div>
+                        <div class="preview" id="table">
+                            <table class="ic-Table">
+                                <tbody>
+                                    <tr>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('table')">Insert Table</a>
+                    </div>
+                </div>
+
+                <div id="columns">
+                    <h2>Columns</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                        </div>
+                        <div class="preview" id="columnsOut">
+                            <div class="content-box">
+                                <div class="grid-row">
+                                    <div class="col-xs-6">
+                                        <ul>
+                                            <li>Lorem ipsum dolor</li>
+                                            <li>Lorem ipsum dolor</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <ul>
+                                            <li>Lorem ipsum dolor</li>
+                                            <li>Lorem ipsum dolor</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('columns')">Insert Columns</a>
+                    </div>
+                </div>
+
+                <div id="contentBox">
+                    <h2>Columns</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <a class="Button btn btn-primary" href="#" onclick="respond('contentBox')">Insert Content Box</a>
+                        </div>
+                        <div class="preview" id="contentBoxOut">
+                            <div class="content-box pad-box-mini border border-trbl border-round">
+                                <p>Your content here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="bannerImg">
+                    <div class="option">
+                        <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
+                    </div>
+                    <div class="preview" id="bannerImgOut">
+                        <div id="header">
+                            <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/template/banner.jpg" alt="Course Banner" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  update the row id="-------", onclick parameter, the id on the preview, and the inner HTML in the preview
       ****** No comments allowed in the featureOut element *******
       <div class="row" id="feature">
         <div class="option">
-          <a class="Button" href="#" onclick="respond('feature')">Insert Feature</a>
+          <a class="Button btn btn-primary" href="#" onclick="respond('feature')">Insert Feature</a>
         </div>
         <div class="preview" id="featureOut">
            Feature HTML goes here 
         </div>
       </div>
 -->
-      <!---------------- Don't Mess with this stuff ----------->
-      <form method="post" action="<%= returnUrl %>" id="editor_button">
-        <input type="hidden" name="lti_message_type" value="ContentItemSelection" />
-        <input type="hidden" name="lti_version" value="LTI-1p0" />
-        <input id="contentItems" type="hidden" name="content_items" value="<%= contentItems %>" />
-      </form>
+        <!---------------- Don't Mess with this stuff ----------->
+        <form method="post" action="<%= returnUrl %>" id="editor_button">
+            <input type="hidden" name="lti_message_type" value="ContentItemSelection" />
+            <input type="hidden" name="lti_version" value="LTI-1p0" />
+            <input id="contentItems" type="hidden" name="content_items" value="<%= contentItems %>" />
+        </form>
     </div>
     <div id="pageTwo" class="page">
-      <div class="row" id="homeTemplate">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
+        <div class="row" id="homeTemplate">
+            <div class="option">
+                <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
+            </div>
+            <div class="preview" id="homeTemplateOut">
+                <%- homePage %>
+            </div>
         </div>
-        <div class="preview" id="homeTemplateOut"><%- homePage %></div>
-      </div>
-      <div class="row" id="orgTemplate">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a><br>
-          <select id="selectTemplate">
-            <option disabled selected value>Select a template</option>
-            <option value="1">Generic Instruction Page</option>
-            <option value="2">Prepare - Read/Watch/Listen</option>
-            <option value="3">Prepare - Read/Watch/Listen (Instructions in another activity)</option>
-            <option value="4">Prepare - Pre-Assesment</option>
-            <option value="5">Prepare - Interview</option>
-            <!--<option value="6">Prepare - Concept Matching</option>
+        <div class="row" id="orgTemplate">
+            <div class="option">
+                <a class="Button btn btn-primary" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a>
+                <br>
+                <select id="selectTemplate">
+                    <option disabled selected value>Select a template</option>
+                    <option value="1">Generic Instruction Page</option>
+                    <option value="2">Prepare - Read/Watch/Listen</option>
+                    <option value="3">Prepare - Read/Watch/Listen (Instructions in another activity)</option>
+                    <option value="4">Prepare - Pre-Assesment</option>
+                    <option value="5">Prepare - Interview</option>
+                    <!--<option value="6">Prepare - Concept Matching</option>
             <option value="7">Prepare - Note Taking</option>
             <option value="8">Prepare - Information Gathering</option>
             <option value="9">Prepare - Scholarly Research</option>
@@ -267,65 +343,53 @@
             <option value="34">Ponder/Prove - Essay</option>
             <option value="35">Ponder/Prove - Worksheet-Workbook</option>
             <option value="36">Ponder/Prove - Portfolio</option>-->
-          </select><br>
-          <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>
-        </div>
-        <div class="preview" id="orgTemplateOut">
-          <p>Please select an option to the left</p>
-        </div>
-        <div class="hidden">
-          <%- templates %>
-        </div>
-      </div>
-      <div class="row" id="templateSmall">
-        <div class="option">
-          <a class="Button" href="#" onclick="respond('templateSmall')">Insert Page Template</a>
-        </div>
-        <div class="preview" id="templateSmallOut">
-          <div class="byui <%= courseClass %>">
-            <div id="header"><img src="https://byui.instructure.com/courses/773/files/129575/preview" alt="Banner" width="3000" height="272" data-api-endpoint="https://byui.instructure.com/api/v1/courses/773/files/129575" data-api-returntype="File" /></div>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <p>*As a note, The editor does not use heading 1, as the page title occupies that role.<br />Congratulations on making it to week 1! There hasn't been a lot required of you up to this point, in fact, nothing!</p>
-            <h2 class="activity readings">Readings</h2>
-            <p><a class="Button Button--primary" href="#">Primary Button</a></p>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span class="byui-popover" title="Put your desired text here." data-tooltip="{&quot;tooltipClass&quot;:&quot;popover popover-padded&quot;, &quot;position&quot;:&quot;right&quot;}">pop-up</span> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="pad-box-mini border border-trbl border-round right quarter"><em>This is a callout box which can be used to emphasize text.</em></span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-            </p>
-            <p><span><img id="demoImage" class="left quarter" style="max-width: 600px;" src="https://content.byui.edu/file/e7de5943-5a1e-4a64-bbea-ab36a5e21d44/21/McKayLibrary.jpg" alt="McKay Library" /><span id="demoCaption" class="caption">Insert Caption Text Here</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
-            </p>
-            <p><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-            <div id="this_page_1" class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
-              <h3 id="ui-id-1" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" aria-controls="ui-id-2" aria-expanded="false" aria-selected="false">Example Dropdown</h3>
-              <div id="ui-id-2" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" role="tabpanel" aria-labelledby="ui-id-1" aria-hidden="true">This is the content</div>
+                </select>
+                <br>
+                <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>
             </div>
-          </div>
+            <div class="preview" id="orgTemplateOut">
+                <p>Please select an option to the left</p>
+            </div>
+            <div class="hidden">
+                <%- templates %>
+            </div>
         </div>
-      </div>
+        <div class="row" id="templateSmall">
+            <div class="option">
+                <a class="Button btn btn-primary" href="#" onclick="respond('templateSmall')">Insert Page Template</a>
+            </div>
+            <div class="preview" id="templateSmallOut">
+                <div class="byui <%= courseClass %>">
+                    <div id="header"><img src="https://byui.instructure.com/courses/773/files/129575/preview" alt="Banner" width="3000" height="272" data-api-endpoint="https://byui.instructure.com/api/v1/courses/773/files/129575" data-api-returntype="File" /></div>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <p>*As a note, The editor does not use heading 1, as the page title occupies that role.
+                        <br />Congratulations on making it to week 1! There hasn't been a lot required of you up to this point, in fact, nothing!</p>
+                    <h2 class="activity readings">Readings</h2>
+                    <p><a class="Button Button--primary" href="#">Primary Button</a></p>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span class="byui-popover" title="Put your desired text here." data-tooltip="{&quot;tooltipClass&quot;:&quot;popover popover-padded&quot;, &quot;position&quot;:&quot;right&quot;}">pop-up</span> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="pad-box-mini border border-trbl border-round right quarter"><em>This is a callout box which can be used to emphasize text.</em></span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                    </p>
+                    <p><span><img id="demoImage" class="left quarter" style="max-width: 600px;" src="https://content.byui.edu/file/e7de5943-5a1e-4a64-bbea-ab36a5e21d44/21/McKayLibrary.jpg" alt="McKay Library" /><span id="demoCaption" class="caption">Insert Caption Text Here</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    </p>
+                    <p><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    <div id="this_page_1" class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        <h3 id="ui-id-1" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" aria-controls="ui-id-2" aria-expanded="false" aria-selected="false">Example Dropdown</h3>
+                        <div id="ui-id-2" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" role="tabpanel" aria-labelledby="ui-id-1" aria-hidden="true">This is the content</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="pageThree" class="page">
-      <h3>Templates can be uploaded to the 'Web Files/templates' folder</h3>
-      <div class="row">
-        <div class="option" id="templates"></div>
-        <div class="preview" id="templateOut">
-          <h4>Please select an option to the left</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="option">
-          <a class="Button" id="submitTemplate" onclick="respond('template')" disabled>Insert Template</a>
-        </div>
-      </div>
     </div>
-  </div>
-  <!--These globals are used in the features.js below make sure they load before the script-->
-  <script>
-    var contentItems = <%- contentItems %>;
-    var returnUrl = "<%= returnUrl %>"
-    var courseNumber = "<%= courseNumber %>"
+    <!--These globals are used in the features.js below make sure they load before the script-->
+    <script>
+        var contentItems = <%- contentItems %>;
+        var returnUrl = "<%= returnUrl %>"
+        var courseNumber = "<%= courseNumber %>"
 
-  </script>
-  <script src="/javascripts/features.js"></script>
+    </script>
+    <script src="/javascripts/features.js"></script>
 </body>
 
 </html>

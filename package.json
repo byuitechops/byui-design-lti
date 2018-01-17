@@ -1,25 +1,26 @@
 {
-  "name": "byui-design-lti",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "engines": {
-    "node": "8.5.0"
-  },
-  "dependencies": {
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "ejs": "^2.5.7",
-    "express": "~4.15.2",
-    "express-session": "^1.15.6",
-    "morgan": "~1.8.1",
-    "node-uuid": "~1.4.0",
-    "request": "^2.83.0",
-    "serve-favicon": "~2.4.2",
-    "xml2js": "~0.4.0",
-    "xmlbuilder": "~2.4.0"
-  }
+    "name": "byui-design-lti",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "restart": "nodemon -e ejs,css ./bin/www"
+    },
+    "engines": {
+        "node": "8.5.0"
+    },
+    "dependencies": {
+        "body-parser": "~1.17.1",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.3",
+        "ejs": "^2.5.7",
+        "express": "~4.15.2",
+        "express-session": "^1.15.6",
+        "morgan": "~1.8.1",
+        "node-uuid": "~1.4.0",
+        "request": "^2.83.0",
+        "serve-favicon": "~2.4.2",
+        "xml2js": "~0.4.0",
+        "xmlbuilder": "~2.4.0"
+    }
 }

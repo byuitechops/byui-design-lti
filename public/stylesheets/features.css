@@ -1,78 +1,108 @@
 .row {
-  display: flex;
-  align-items: flex-start;
-  border-bottom: #ccc solid 1px;
-  padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
 }
-
 .option,
 .row > div,
 .row > p {
-  margin: 5px 20px;
-  box-sizing: border-box;
+    margin: 10px 20px;
+    box-sizing: border-box;
 }
-
 .option,
 .row > p {
-  min-width: 25%;
-  width: 25%;
-  max-width: 25%;
+    min-width: 25%;
+    width: 25%;
+    max-width: 25%;
 }
-
 .preview {
-  flex-grow: 1;
+    flex-grow: 1;
 }
-
 #article {
-  padding: 20px;
+    padding: 20px;
 }
-
 input[type="text"],
 select,
 textarea {
-  width: 100%;
-  margin: 10px 0 0;
+    width: 100%;
+    margin: 10px 0 0;
 }
-
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
-
 #article #header {
-  display: block !important;
+    display: block !important;
 }
-
 .page {
-  display: none;
+    display: none;
 }
-
 .page.visible {
-  display: block;
+    display: block;
 }
-
 nav {
-  display: flex;
+    display: flex;
+    position: fixed;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 9999999;
 }
-
 .tab {
-  flex-grow: 1;
-  text-align: center;
-  background: #0C4496;
-  color: #fff;
-  height: 40px;
+    flex-grow: 1;
+    text-align: center;
+    background: #0C4496;
+    color: #fff;
+    height: 40px;
 }
-
 .tab:hover,
 .tab:active,
 .tab:visited {
-  color: white;
+    color: white;
 }
-
 .embedded > #article {
-  height: calc(100vh - 80px);
-  overflow-y: auto;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+.margin {
+    margin: 5px 0;
 }
 
-.margin {
-  margin: 5px 0;
+/* Not Ben's CSS */
+
+.page nav {
+    background-color: cornflowerblue;
+    position: fixed;
+    margin-top: 0px;
+    padding: 5px;
+    top: 40px;
+    left: 0px;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 9999999;
+}
+.page nav a {
+    color: white;
+}
+
+.features {
+    margin-top: 15px;
+}
+
+.features > div {
+    border-bottom: #ccc solid 1px;
+}
+
+.features > div > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 12px;
+}
+
+.option {
+/*    border-right: #ccc solid 1px;*/
+    padding-right: 30px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
 }
