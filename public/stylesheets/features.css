@@ -7,7 +7,7 @@
 .option,
 .row>div,
 .row>p {
-    margin: 10px 20px;
+    margin: 20px;
     box-sizing: border-box;
 }
 
@@ -106,11 +106,13 @@ nav {
     margin-top: 15px;
 }
 
-.features>div {
+.features>div,
+#pageTwo>div {
     border-bottom: #ccc solid 1px;
 }
 
-.features>div>h2 {
+.features>div>h2,
+#pageTwo>div {
     padding-top: 77px;
     margin-top: -77px;
 }

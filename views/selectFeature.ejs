@@ -33,7 +33,7 @@
         </a>
     </nav>
     <div id="article">
-        <div id="pageOne" class="page visible">
+        <div id="pageOne" class="page">
             <nav>
                 <a href="#button">Button</a>
                 <a href="#banner">Activity Banner</a>
@@ -304,14 +304,19 @@
         </div>
       </div>
 -->
-        <!---------------- Don't Mess with this stuff ----------->
+        <!---------------- Don't Mess with this stuff --------- -->
         <form method="post" action="<%= returnUrl %>" id="editor_button">
             <input type="hidden" name="lti_message_type" value="ContentItemSelection" />
             <input type="hidden" name="lti_version" value="LTI-1p0" />
             <input id="contentItems" type="hidden" name="content_items" value="<%= contentItems %>" />
         </form>
     </div>
-    <div id="pageTwo" class="page">
+    <div id="pageTwo" class="page visible">
+        <nav>
+            <a href="#homeTemplate">Home Page</a>
+            <a href="#orgTemplate">Org Template</a>
+            <a href="#templateSmall">Small Template</a>
+        </nav>
         <div class="row" id="homeTemplate">
             <div class="option">
                 <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
@@ -326,42 +331,45 @@
                 <br>
                 <select id="selectTemplate">
                     <option disabled selected value>Select a template</option>
+                    <option value="37">Generic Activity Instructions</option>
+                    <option value="38">Generic Quiz Instructions</option>
                     <option value="1">Generic Instruction Page</option>
                     <option value="2">Prepare - Read/Watch/Listen</option>
+                    <!--<option value="2">Prepare - Read/Watch/Listen</option>
                     <option value="3">Prepare - Read/Watch/Listen (Instructions in another activity)</option>
                     <option value="4">Prepare - Pre-Assesment</option>
                     <option value="5">Prepare - Interview</option>
-                    <!--<option value="6">Prepare - Concept Matching</option>
-            <option value="7">Prepare - Note Taking</option>
-            <option value="8">Prepare - Information Gathering</option>
-            <option value="9">Prepare - Scholarly Research</option>
-            <option value="10">Prepare - Learning Contract</option>
-            <option value="11">Prepare - Project Plan</option>
-            <option value="12">Prepare - Sign Up</option>
-            <option value="13">Prepare - Quiz Writing</option>
-            <option value="14">TOA - Presentation</option>
-            <option value="15">TOA - Case Study</option>
-            <option value="16">TOA - Field Experience</option>
-            <option value="17">TOA - Group Problem Solving</option>
-            <option value="18">TOA - Group Project</option>
-            <option value="19">TOA - Icebreaker</option>
-            <option value="20">TOA - Insight Sharing</option>
-            <option value="21">TOA - Jigsaw Teaching</option>
-            <option value="22">TOA - Peer Accountability</option>
-            <option value="23">TOA - Peer Feedback</option>
-            <option value="24">TOA - Q&amp;A/Support Forum</option>
-            <option value="25">TOA - Role Play Discussion</option>
-            <option value="26">TOA - Structured Debate</option>
-            <option value="27">TOA - Study Group</option>
-            <option value="28">TOA - Topic Discussion</option>
-            <option value="29">Ponder/Prove - Unanswered Questions</option>
-            <option value="30">Ponder/Prove - Quiz</option>
-            <option value="31">Ponder/Prove - Exam</option>
-            <option value="32">Ponder/Prove - Presentation</option>
-            <option value="33">Ponder/Prove - Project</option>
-            <option value="34">Ponder/Prove - Essay</option>
-            <option value="35">Ponder/Prove - Worksheet-Workbook</option>
-            <option value="36">Ponder/Prove - Portfolio</option>-->
+                    <option value="6">Prepare - Concept Matching</option>
+                    <option value="7">Prepare - Note Taking</option>
+                    <option value="8">Prepare - Information Gathering</option>
+                    <option value="9">Prepare - Scholarly Research</option>
+                    <option value="10">Prepare - Learning Contract</option>
+                    <option value="11">Prepare - Project Plan</option>
+                    <option value="12">Prepare - Sign Up</option>
+                    <option value="13">Prepare - Quiz Writing</option>
+                    <option value="14">TOA - Presentation</option>
+                    <option value="15">TOA - Case Study</option>
+                    <option value="16">TOA - Field Experience</option>
+                    <option value="17">TOA - Group Problem Solving</option>
+                    <option value="18">TOA - Group Project</option>
+                    <option value="19">TOA - Icebreaker</option>
+                    <option value="20">TOA - Insight Sharing</option>
+                    <option value="21">TOA - Jigsaw Teaching</option>
+                    <option value="22">TOA - Peer Accountability</option>
+                    <option value="23">TOA - Peer Feedback</option>
+                    <option value="24">TOA - Q&amp;A/Support Forum</option>
+                    <option value="25">TOA - Role Play Discussion</option>
+                    <option value="26">TOA - Structured Debate</option>
+                    <option value="27">TOA - Study Group</option>
+                    <option value="28">TOA - Topic Discussion</option>
+                    <option value="29">Ponder/Prove - Unanswered Questions</option>
+                    <option value="30">Ponder/Prove - Quiz</option>
+                    <option value="31">Ponder/Prove - Exam</option>
+                    <option value="32">Ponder/Prove - Presentation</option>
+                    <option value="33">Ponder/Prove - Project</option>
+                    <option value="34">Ponder/Prove - Essay</option>
+                    <option value="35">Ponder/Prove - Worksheet-Workbook</option>
+                    <option value="36">Ponder/Prove - Portfolio</option>-->
                 </select>
                 <br>
                 <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>
