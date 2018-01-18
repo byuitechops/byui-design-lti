@@ -11,7 +11,8 @@
     <link type="text/css" rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_107060000000000001/attachments/144140/byui.css">
     <!--Below is the link to the global css, which may need updated in the future-->
     <link type="text/css" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/wiki_page-46e7e026f6.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link type="text/css" rel="stylesheet" href="/stylesheets/features.css">
     <style>
@@ -19,7 +20,6 @@
             --theme-dark: #0076b6;
             --theme-light: #BDE9FF;
         }
-
     </style>
 </head>
 
@@ -102,6 +102,42 @@
                     </div>
                 </div>
 
+                <!-- <div id="title">
+                    <h2>Title</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                        </div>
+                        <div class="preview">
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('titleOut')">Insert Title</a>
+                    </div>
+                </div> -->
+
+                <div id="definition">
+                    <h2>Definition</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                        </div>
+                        <div class="preview">
+                            <dl>
+                                <dt>Term (n) </dt>
+                                <dd>1. Definition </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('definitionOut')">Insert Definition</a>
+                    </div>
+                </div>
+
                 <div id="accordion">
                     <h2>Accordion</h2>
                     <div>
@@ -136,13 +172,18 @@
                             <textarea placeholder="Content Text" onkeyup="updateCallout()"></textarea>
                         </div>
                         <div class="preview">
-                            <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                            <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                                augue duis dolore te feugait nulla
                                 <span id="calloutOut">
                                     <span class="pad-box-mini border border-trbl border-round right quarter">
                                         <em>This is a callout box which can be used to emphasize text.</em>
                                     </span>
                                 </span>
-                                facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+                                odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                facilisi.
                             </p>
                         </div>
                     </div>
@@ -222,7 +263,7 @@
                         <a class="Button btn btn-primary" href="#" onclick="respond('columns')">Insert Columns</a>
                     </div>
                 </div>
-                
+
                 <div id="button">
                     <h2>Button</h2>
                     <div>
@@ -277,7 +318,8 @@
                         </div>
                         <div class="preview" id="bannerImgOut">
                             <div id="header">
-                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/Web%20Files/homeImage.jpg" alt="Course Banner" />
+                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/Web%20Files/homeImage.jpg"
+                                    alt="Course Banner" />
                             </div>
                         </div>
                     </div>
@@ -299,12 +341,7 @@
         </div>
       </div>
 -->
-        <!---------------- Don't Mess with this stuff --------- -->
-        <form method="post" action="<%= returnUrl %>" id="editor_button">
-            <input type="hidden" name="lti_message_type" value="ContentItemSelection" />
-            <input type="hidden" name="lti_version" value="LTI-1p0" />
-            <input id="contentItems" type="hidden" name="content_items" value="<%= contentItems %>" />
-        </form>
+
     </div>
     <div id="pageTwo" class="page">
         <nav>
@@ -314,7 +351,7 @@
         </nav>
         <div class="row" id="homeTemplate">
             <div class="option">
-            <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
+                <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
             </div>
             <div class="preview" id="homeTemplateOut">
                 <%- homePage %>
@@ -422,12 +459,19 @@
         </div>-->
     </div>
     </div>
+    <!---------------- Don't Mess with this stuff --------- -->
+    <!-- This form is used to insert web features into the Canvas WYSISYG -->
+    <form method="post" action="<%= returnUrl %>" id="editor_button">
+        <input type="hidden" name="lti_message_type" value="ContentItemSelection" />
+        <input type="hidden" name="lti_version" value="LTI-1p0" />
+        <input id="contentItems" type="hidden" name="content_items" value="<%= contentItems %>" />
+    </form>
+
     <!--These globals are used in the features.js below make sure they load before the script-->
     <script>
         var contentItems = <%- contentItems %>;
         var returnUrl = "<%= returnUrl %>"
         var courseNumber = "<%= courseNumber %>"
-
     </script>
     <script src="/javascripts/features.js"></script>
 </body>
