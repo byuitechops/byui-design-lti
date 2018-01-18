@@ -222,7 +222,7 @@
                         <a class="Button btn btn-primary" href="#" onclick="respond('columns')">Insert Columns</a>
                     </div>
                 </div>
-                
+
                 <div id="button">
                     <h2>Button</h2>
                     <div>
@@ -244,6 +244,30 @@
                     </div>
                     <div>
                         <a class="Button btn btn-primary" href="#" onclick="respond('button')">Insert Button</a>
+                    </div>
+                </div>
+
+                <div id="popover">
+                    <h2>Popover</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="option">
+                            <input type="text" placeholder="Text" onkeyup="updatePopover()">
+                            <textarea placeholder="Popover Text" onkeyup="updatePopover()"></textarea>
+                        </div>
+                        <div>
+                            <div class="preview" id="popoverOut">
+                                <a data-tooltip='{"tooltipClass":"popover popover-padded", "position":"right"}' title="Oh hello!">
+                                    Text with accessible popover
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('popover')">Insert popover</a>
                     </div>
                 </div>
 
@@ -314,7 +338,7 @@
         </nav>
         <div class="row" id="homeTemplate">
             <div class="option">
-            <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
+                <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
             </div>
             <div class="preview" id="homeTemplateOut">
                 <%- homePage %>
