@@ -43,6 +43,14 @@ function updateAccordion() {
   $('.accordion div').html(content);
 }
 
+// Popover generator
+function updatePopover() {
+  var text = $('#popover input').val();
+  var content = $('#popver textarea').val();
+  $('#popoverOut a').text(text);
+  $('#popoverOut a').title = content;
+}
+
 // Callout generator
 function updateCallout() {
   var content = $('#callout textarea').val();

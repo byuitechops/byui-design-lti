@@ -288,6 +288,30 @@
                     </div>
                 </div>
 
+                <div id="popover">
+                    <h2>Popover</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="option">
+                            <input type="text" placeholder="Text" onkeyup="updatePopover()">
+                            <textarea placeholder="Popover Text" onkeyup="updatePopover()"></textarea>
+                        </div>
+                        <div>
+                            <div class="preview" id="popoverOut">
+                                <a data-tooltip='{"tooltipClass":"popover popover-padded", "position":"right"}' title="Oh hello!">
+                                    Text with accessible popover
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('popover')">Insert popover</a>
+                    </div>
+                </div>
+
                 <div id="contentBox">
                     <h2>Content Box</h2>
                     <div>
