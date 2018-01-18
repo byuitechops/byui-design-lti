@@ -43,6 +43,12 @@ function updateAccordion() {
   $('.accordion div').html(content);
 }
 
+// Callout generator
+function updateCallout() {
+  var content = $('#callout textarea').val();
+  $('#calloutOut span em').text(content);
+}
+
 //init templates
 function loadTemplates() {
   $('#templateOut').html('<h4>Loading Templates...</h4>')

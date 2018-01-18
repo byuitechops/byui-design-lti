@@ -133,3 +133,14 @@ nav {
 .btn-primary {
     background-color: #0075c5;
 }
+
+.lessons {
+    display: flex;
+    flex-grow: 1;
+}
+
+.lessons>div {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}

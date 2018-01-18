@@ -19,11 +19,11 @@ function getTemplateFolderId(courseNumber) {
   return new Promise(function (resolve, reject) {
     request(domain + '/api/v1/courses/' + courseNumber + '/folders', auth, function (err, data, body) {
       var templateId
-      body.forEach(function (each) {
+      /*body.forEach(function (each) {
         if (each.full_name == 'course files/Web Files/templates') {
           templateId = each.id
         }
-      })
+      })*/
       resolve(templateId)
     }).on('error', function (err) {
       reject(err)
