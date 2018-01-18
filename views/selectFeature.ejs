@@ -102,21 +102,72 @@
                     </div>
                 </div>
 
-                <!-- <div id="title">
-                    <h2>Title</h2>
+                <div id="imgCarousel">
+                    <h2>Image Carousel</h2>
                     <div>
                         <p>Guidelines</p>
                     </div>
                     <div class="row">
                         <div class="option">
                         </div>
-                        <div class="preview">
+                        <div class="preview" id="imgCarouselOut">
+                            <div class="carousel">
+                                <div class="slide">
+                                    Insert image or content
+                                </div>
+                                <div class="slide">
+                                    Insert image or content
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <a class="Button btn btn-primary" href="#" onclick="respond('titleOut')">Insert Title</a>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('imgCarousel')">Insert Image Carousel</a>
                     </div>
-                </div> -->
+                </div>
+
+                <div id="image">
+                    <h2>Image</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <p>SRC</p>
+                            <p>ALT</p>
+                            <p>Caption Text</p>
+                        </div>
+                        <div class="preview" id="imageOut">
+                            <img class="left quarter" src="" alt="...">
+                            <span class="caption">Insert Caption Text Here</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('image')">Insert Image</a>
+                    </div>
+                </div>
+
+                <div id="dialog">
+                    <h2>Dialog</h2>
+                    <div>
+                        <p>How will we set the dialog id/href?</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <p>Title</p>
+                            <p>Content</p>
+                        </div>
+                        <div class="preview" id="dialogOut">
+                            <div id="dialog_for_link_1" title="Title" class="enhanceable_content dialog">dialog</div>
+                            <p>
+                                <a id="link_1" class="Button" href="#dialog_for_link_1">prompt</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('dialog')">Insert Dialog</a>
+                    </div>
+                </div>
 
                 <div id="definition">
                     <h2>Definition</h2>
@@ -126,7 +177,7 @@
                     <div class="row">
                         <div class="option">
                         </div>
-                        <div class="preview">
+                        <div class="preview" id="definitionOut">
                             <dl>
                                 <dt>Term (n) </dt>
                                 <dd>1. Definition </dd>
@@ -134,7 +185,7 @@
                         </div>
                     </div>
                     <div>
-                        <a class="Button btn btn-primary" href="#" onclick="respond('definitionOut')">Insert Definition</a>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('definition')">Insert Definition</a>
                     </div>
                 </div>
 

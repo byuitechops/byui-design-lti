@@ -46,9 +46,9 @@ function updateAccordion() {
 // Popover generator
 function updatePopover() {
   var text = $('#popover input').val();
-  var content = $('#popver textarea').val();
+  var content = $('#popover textarea').val();
   $('#popoverOut a').text(text);
-  $('#popoverOut a').title = content;
+  $('#popoverOut a').attr('title', content);
 }
 
 // Callout generator
