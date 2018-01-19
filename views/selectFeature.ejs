@@ -179,9 +179,19 @@
                     </div>
                     <div class="row">
                         <div class="option">
-                            <p>left/right/center</p>
-                            <p>Full/half/quarter (what does this mean?)</p>
-                            <textarea placeholder="Content Text" onkeyup="updateCallout()"></textarea>
+                            <div class="position">
+                                <input type="radio" name="position" value="left" id="calloutPosLeft" onchange="updateCalloutPosition()">
+                                <label for="calloutPosLeft">Left</label>
+
+                                <input type="radio" name="position" value="center" id="calloutPosCenter" onchange="updateCalloutPosition()">
+                                <label for="calloutPosCenter">Center</label>
+
+                                <input type="radio" name="position" value="right" id="calloutPosRight" onchange="updateCalloutPosition()">
+                                <label for="calloutPosRight">Right</label>
+                            </div>
+
+                            <p>full/half/quarter</p>
+                            <textarea placeholder="Content Text" onkeyup="updateCalloutText()"></textarea>
                         </div>
                         <div class="preview">
                             <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
@@ -457,7 +467,7 @@
                     <option disabled selected value>Select a template</option>
                     <option value="1">Generic Activity Instructions</option>
                     <option value="37">Generic Quiz Instructions</option>
-                    <option value="2">Prepare - Read/Watch/Listen</option>
+                    <!-- <option value="2">Prepare - Read/Watch/Listen</option>
                     <option value="3">Prepare - Read/Watch/Listen (Instructions in another activity)</option>
                     <option value="4">Prepare - Pre-Assesment</option>
                     <option value="5">Prepare - Interview</option>
@@ -492,8 +502,7 @@
                     <option value="33">Ponder/Prove - Project</option>
                     <option value="34">Ponder/Prove - Essay</option>
                     <option value="35">Ponder/Prove - Worksheet-Workbook</option> 
-                    <option value="36">Ponder/Prove - Portfolio</option>
-                    
+                    <option value="36">Ponder/Prove - Portfolio</option> -->
                 </select>
                 <br>
                 <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>

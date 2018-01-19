@@ -44,7 +44,21 @@ function updateAccordion() {
 }
 
 // Callout generator
-function updateCallout() {
+function updateCalloutPosition() {
+  var possibleClasses = ['left', 'right', 'center'];
+
+  // remove existing class
+  possibleClasses.forEach((cssClass) => {
+    if ($('#calloutOut>span').hasClass(cssClass)) {
+      $('#calloutOut>span').removeClass(cssClass);
+    }
+  });
+
+  $('#calloutOut>span').addClass($('#callout .option input[type="radio"]:checked').attr('value'));
+
+}
+
+function updateCalloutText() {
   var content = $('#callout textarea').val();
   $('#calloutOut span em').text(content);
 }
@@ -70,8 +84,8 @@ function updateColumn() {
 // Dialog Generator
 function updateDialog() {
   var title = $('#dialog .option input[placeholder="Dialog Title"]').val(),
-    prompt = $('#dialog .option input[placeholder="Prompt Text"]').val();
-  content = $('#dialog .option textarea').val(),
+    prompt = $('#dialog .option input[placeholder="Prompt Text"]').val(),
+    content = $('#dialog .option textarea').val(),
     date = new Date().getTime();
   $('#dialogOut div').attr('title', title);
   $('#dialogOut a').text(prompt);
