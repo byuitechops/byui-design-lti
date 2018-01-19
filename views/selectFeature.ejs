@@ -33,47 +33,48 @@
         </a>
     </nav>
     <div id="article">
-        <div id="pageOne" class="page">
+        <div id="pageOne" class="page visible">
             <nav>
-                <a href="#button">Button</a>
-                <a href="#banner">Activity Banner</a>
                 <a href="#accordion">Accordion</a>
-                <a href="#callout">Callout</a>
-                <a href="#columns">Columns</a>
-                <a href="#contentBox">Content Box</a>
+                <a href="#banner">Activity Banner</a>
                 <a href="#bannerImg">Banner Image</a>
+                <a href="#button">Button</a>
+                <a href="#callout">Callout</a>
+                <a href="#contentBox">Content Box</a>
+                <a href="#columns">Columns</a>
             </nav>
             <h3>Select the feature you would like to insert</h3>
 
             <div class="features">
-                <div id="button">
-                    <h2>Button</h2>
+
+                <div id="accordion">
+                    <h2>Accordion</h2>
                     <div>
                         <p>Guidelines</p>
                     </div>
-
                     <div class="row">
                         <div class="option">
-                            <input type="text" placeholder="Button Text" oninput="updateButton()">
-                            <input type="text" placeholder="Button HTML" oninput="updateButton()">
-                            <input type="checkbox" id="blue">
-                            <label for="blue">Make Primary?</label>
+                            <input type="text" placeholder="Heading Text" onkeyup="updateAccordion()">
+                            <textarea placeholder="Content Text" onkeyup="updateAccordion()"></textarea>
                         </div>
-                        <div>
-                            <div class="preview" id="buttonOut">
-                                <a class="Button" href="#">Button Text</a>
+                        <div class="preview" id="accordionOut">
+                            <div class="accordion" id="this_page_1">
+                                <h3>Section 1</h3>
+                                <div>
+                                    <p>Content for Section 1</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <a class="Button btn btn-primary" href="#" onclick="respond('button')">Insert Button</a>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('accordion')">Insert Accordion</a>
                     </div>
                 </div>
 
                 <div id="banner">
                     <h2>Activity Banner</h2>
                     <div>
-                        <p>Red Tape. Yay! How long can this get? </p>
+                        <p>Guidelines</p>
                     </div>
                     <div class="row">
                         <div class="option">
@@ -126,27 +127,48 @@
                     </div>
                 </div>
 
-                <div id="accordion">
-                    <h2>Accordion</h2>
+                <div id="bannerImg">
+                    <h2>Banner Image</h2>
                     <div>
-                        <p>Some stuff</p>
+                        <p>Guidelines</p>
                     </div>
                     <div class="row">
                         <div class="option">
-                            <input type="text" placeholder="Heading Text" onkeyup="updateAccordion()">
-                            <textarea placeholder="Content Text" onkeyup="updateAccordion()"></textarea>
+                            <p>Are we using these?</p>
                         </div>
-                        <div class="preview" id="accordionOut">
-                            <div class="accordion" id="this_page_1">
-                                <h3>Section 1</h3>
-                                <div>
-                                    <p>Content for Section 1</p>
-                                </div>
+                        <div class="preview" id="bannerImgOut">
+                            <div id="header">
+                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/Web%20Files/homeImage.jpg"
+                                    alt="Course Banner" />
                             </div>
                         </div>
                     </div>
                     <div>
-                        <a class="Button btn btn-primary" href="#" onclick="respond('accordion')">Insert Accordion</a>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
+                    </div>
+                </div>
+
+                <div id="button">
+                    <h2>Button</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="option">
+                            <input type="text" placeholder="Button Text" oninput="updateButton()">
+                            <input type="text" placeholder="Button HTML" oninput="updateButton()">
+                            <input type="checkbox" id="blue">
+                            <label for="blue">Make Primary?</label>
+                        </div>
+                        <div>
+                            <div class="preview" id="buttonOut">
+                                <a class="Button" href="#">Button Text</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('button')">Insert Button</a>
                     </div>
                 </div>
 
@@ -157,6 +179,9 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <p>left/right/center</p>
+                            <p>Full/half/quarter (what does this mean?)</p>
+                            <textarea placeholder="Content Text" onkeyup="updateCallout()"></textarea>
                         </div>
                         <div class="preview">
                             <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
@@ -179,46 +204,6 @@
                     </div>
                 </div>
 
-                <div id="table">
-                    <h2>Table</h2>
-                    <div>
-                        <p>Guidelines</p>
-                    </div>
-                    <div class="row">
-                        <div class="option">
-                        </div>
-                        <div class="preview" id="table">
-                            <table class="ic-Table">
-                                <tbody>
-                                    <tr>
-                                        <th>Heading</th>
-                                        <th>Heading</th>
-                                        <th>Heading</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Text</td>
-                                        <td>Text</td>
-                                        <td>Text</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Text</td>
-                                        <td>Text</td>
-                                        <td>Text</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Text</td>
-                                        <td>Text</td>
-                                        <td>Text</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div>
-                        <a class="Button btn btn-primary" href="#" onclick="respond('table')">Insert Table</a>
-                    </div>
-                </div>
-
                 <div id="columns">
                     <h2>Columns</h2>
                     <div>
@@ -226,6 +211,7 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <p>Up to 3 cols</p>
                         </div>
                         <div class="preview" id="columnsOut">
                             <div class="content-box">
@@ -258,6 +244,7 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <p>Are we using these?</p>
                         </div>
                         <div class="preview" id="contentBoxOut">
                             <div class="content-box pad-box-mini border border-trbl border-round">
@@ -270,26 +257,166 @@
                     </div>
                 </div>
 
-                <div id="bannerImg">
-                    <h2>Banner Image</h2>
+                <div id="definition">
+                    <h2>Definition</h2>
                     <div>
                         <p>Guidelines</p>
                     </div>
                     <div class="row">
-
                         <div class="option">
                         </div>
-                        <div class="preview" id="bannerImgOut">
-                            <div id="header">
-                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/template/banner.jpg" alt="Course Banner"
-                                />
+                        <div class="preview" id="definitionOut">
+                            <dl>
+                                <dt>Term (n) </dt>
+                                <dd>1. Definition </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('definition')">Insert Definition</a>
+                    </div>
+                </div>
+
+                <div id="dialog">
+                    <h2>Dialog</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <input type="text" placeholder="Dialog Title" onkeyup="updateDialog()">
+                            <input type="text" placeholder="Prompt Text" onkeyup="updateDialog()">
+                            <textarea placeholder="Content" onkeyup="updateDialog()"></textarea>
+                        </div>
+                        <div class="preview" id="dialogOut">
+                            <div id="dialog_for_link_1" title="Title" class="enhanceable_content dialog">dialog</div>
+                            <p>
+                                <a id="link_1" class="Button" href="#dialog_for_link_1">prompt</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('dialog')">Insert Dialog</a>
+                    </div>
+                </div>
+
+                <div id="image">
+                    <h2>Image</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <p>left/right/center</p>
+                            <p>full/half/quarter</p>
+                            <p>clearfix</p>
+
+
+                            <p>SRC</p>
+                            <p>ALT</p>
+                            <p>Caption Text</p>
+                        </div>
+                        <div class="preview" id="imageOut">
+                            <img class="left quarter" src="" alt="...">
+                            <span class="caption">Insert Caption Text Here</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('image')">Insert Image</a>
+                    </div>
+                </div>
+
+                <div id="imgCarousel">
+                    <h2>Image Carousel</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <p>how many pages?</p>
+                            <p>Insert links to content</p>
+                        </div>
+                        <div class="preview" id="imgCarouselOut">
+                            <div class="carousel">
+                                <div class="slide">
+                                    Insert image or content
+                                </div>
+                                <div class="slide">
+                                    Insert image or content
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('imgCarousel')">Insert Image Carousel</a>
                     </div>
                 </div>
+
+                <div id="popover">
+                    <h2>Popover</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="option">
+                            <input type="text" placeholder="Text" onkeyup="updatePopover()">
+                            <textarea placeholder="Popover Text" onkeyup="updatePopover()"></textarea>
+                        </div>
+                        <div>
+                            <div class="preview" id="popoverOut">
+                                <a data-tooltip='{"tooltipClass":"popover popover-padded", "position":"right"}' title="Oh hello!">
+                                    Text with accessible popover
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('popover')">Insert popover</a>
+                    </div>
+                </div>
+
+                <div id="table">
+                    <h2>Table</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <p>basic &amp; Srtiped</p>
+                        </div>
+                        <div class="preview" id="tableOut">
+                            <table class="ic-Table">
+                                <tbody>
+                                    <tr>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('table')">Insert Table</a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -304,18 +431,13 @@
         </div>
       </div>
 -->
-        <!---------------- Don't Mess with this stuff --------- -->
-        <form method="post" action="<%= returnUrl %>" id="editor_button">
-            <input type="hidden" name="lti_message_type" value="ContentItemSelection" />
-            <input type="hidden" name="lti_version" value="LTI-1p0" />
-            <input id="contentItems" type="hidden" name="content_items" value="<%= contentItems %>" />
-        </form>
+
     </div>
-    <div id="pageTwo" class="page visible">
+    <div id="pageTwo" class="page">
         <nav>
             <a href="#homeTemplate">Home Page</a>
             <a href="#orgTemplate">Org Template</a>
-            <a href="#templateSmall">Small Template</a>
+            <!--<a href="#templateSmall">Small Template</a>-->
         </nav>
         <div class="row" id="homeTemplate">
             <div class="option">
@@ -325,6 +447,7 @@
                 <%- homePage %>
             </div>
         </div>
+
         <div class="row" id="orgTemplate">
             <div class="option">
                 <a class="Button btn btn-primary" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a>
@@ -381,45 +504,36 @@
                 <%- templates %>
             </div>
         </div>
-        <div class="row" id="templateSmall">
+        <!--<div class="row" id="templateSmall">
             <div class="option">
                 <a class="Button btn btn-primary" href="#" onclick="respond('templateSmall')">Insert Page Template</a>
             </div>
             <div class="preview" id="templateSmallOut">
                 <div class="byui <%= courseClass %>">
                     <div id="header">
-                        <img src="https://byui.instructure.com/courses/773/files/129575/preview" alt="Banner" width="3000" height="272" data-api-endpoint="https://byui.instructure.com/api/v1/courses/773/files/129575"
-                            data-api-returntype="File" />
+                        <img src="https://byui.instructure.com/courses/773/files/129575/preview" alt="Banner" width="3000" height="272" data-api-endpoint="https://byui.instructure.com/api/v1/courses/773/files/129575" data-api-returntype="File" />
                     </div>
                     <h2>Heading 2</h2>
                     <h3>Heading 3</h3>
                     <h4>Heading 4</h4>
                     <p>*As a note, The editor does not use heading 1, as the page title occupies that role.
-                        <br />Congratulations on making it to week 1! There hasn't been a lot required of you up to this point,
-                        in fact, nothing!</p>
+                        <br />Congratulations on making it to week 1! There hasn't been a lot required of you up to this point, in fact, nothing!</p>
                     <h2 class="activity readings">Readings</h2>
                     <p>
                         <a class="Button Button--primary" href="#">Primary Button</a>
                     </p>
                     <p>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            <span class="byui-popover" title="Put your desired text here." data-tooltip="{&quot;tooltipClass&quot;:&quot;popover popover-padded&quot;, &quot;position&quot;:&quot;right&quot;}">pop-up</span> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <span class="pad-box-mini border border-trbl border-round right quarter">
+                            <span class="byui-popover" title="Put your desired text here." data-tooltip="{&quot;tooltipClass&quot;:&quot;popover popover-padded&quot;, &quot;position&quot;:&quot;right&quot;}">pop-up</span> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <span class="pad-box-mini border border-trbl border-round right quarter">
                                 <em>This is a callout box which can be used to emphasize text.</em>
-                            </span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</span>
+                            </span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
                     </p>
                     <p>
                         <span>
                             <img id="demoImage" class="left quarter" style="max-width: 600px;" src="https://content.byui.edu/file/e7de5943-5a1e-4a64-bbea-ab36a5e21d44/21/McKayLibrary.jpg"
                                 alt="McKay Library" />
-                            <span id="demoCaption" class="caption">Insert Caption Text Here</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <span id="demoCaption" class="caption">Insert Caption Text Here</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </span>
                     </p>
                     <p>
@@ -429,16 +543,22 @@
                             mollit anim id est laborum.</span>
                     </p>
                     <div id="this_page_1" class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
-                        <h3 id="ui-id-1" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
-                            role="tab" aria-controls="ui-id-2" aria-expanded="false" aria-selected="false">Example Dropdown</h3>
-                        <div id="ui-id-2" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;"
-                            role="tabpanel" aria-labelledby="ui-id-1" aria-hidden="true">This is the content</div>
+                        <h3 id="ui-id-1" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" aria-controls="ui-id-2" aria-expanded="false" aria-selected="false">Example Dropdown</h3>
+                        <div id="ui-id-2" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" role="tabpanel" aria-labelledby="ui-id-1" aria-hidden="true">This is the content</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
     </div>
+    <!---------------- Don't Mess with this stuff --------- -->
+    <!-- This form is used to insert web features into the Canvas WYSISYG -->
+    <form method="post" action="<%= returnUrl %>" id="editor_button">
+        <input type="hidden" name="lti_message_type" value="ContentItemSelection" />
+        <input type="hidden" name="lti_version" value="LTI-1p0" />
+        <input id="contentItems" type="hidden" name="content_items" value="<%= contentItems %>" />
+    </form>
+
     <!--These globals are used in the features.js below make sure they load before the script-->
     <script>
         var contentItems = <%- contentItems %>;
