@@ -44,23 +44,23 @@ function updateAccordion() {
 }
 
 // Callout generator
-function updateCalloutPosition() {
-  var possibleClasses = ['left', 'right', 'center'];
+function updateCallout() {
+  var content = $('#callout textarea').val(),
+    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
 
-  // remove existing class
-  possibleClasses.forEach((cssClass) => {
-    if ($('#calloutOut>span').hasClass(cssClass)) {
-      $('#calloutOut>span').removeClass(cssClass);
+  // remove existing position & size classes
+  classesToRemove.forEach((classToRemove) => {
+    if ($('#calloutOut>span').hasClass(classToRemove)) {
+      $('#calloutOut>span').removeClass(classToRemove);
     }
   });
 
-  $('#calloutOut>span').addClass($('#callout .option input[type="radio"]:checked').attr('value'));
+  // add new position & zise classes
+  $('#calloutOut>span').addClass($('#callout .position input[type="radio"]:checked').attr('value'));
+  $('#calloutOut>span').addClass($('#callout .size input[type="radio"]:checked').attr('value'));
 
-}
-
-function updateCalloutText() {
-  var content = $('#callout textarea').val();
-  $('#calloutOut span em').text(content);
+  if (content != '')
+    $('#calloutOut span em').text(content);
 }
 
 // Column generator
@@ -94,6 +94,41 @@ function updateDialog() {
   $('#dialogOut a').attr('href', `#dialog_for_link_${date}`);
   $('#dialogOut a').attr('id', date);
 }
+
+// Image generator
+function updateImage() {
+  var source = $('#image .option input[placeholder="Source URL"]').val(),
+    alt = $('#image .option input[placeholder="Alt Text"]').val(),
+    caption = $('#image .option input[placeholder="Caption Text"]').val(),
+    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
+
+  // remove size & position classes from img
+  classesToRemove.forEach((classToRemove) => {
+    if ($('#imageOut>img').hasClass(classToRemove)) {
+      $('#imageOut>img').removeClass(classToRemove);
+    }
+  });
+  // add size & position classes
+  $('#imageOut>img').addClass($('#image .position input[type="radio"]:checked').attr('value'));
+  $('#imageOut>img').addClass($('#image .size input[type="radio"]:checked').attr('value'));
+
+  // add/remove clearfix
+  if ($('#image .option input[type="checkbox"]').is(':checked')) {
+    $('#imageOut').addClass("clearfix");
+  } else {
+    $('#imageOut').removeClass("clearfix");
+  }
+
+  // Don't set alt to empty string
+  if (source == '') {
+    source = '...'
+  }
+  
+  $('#imageOut img').attr('alt', alt);
+  $('#imageOut img').attr('src', source);
+  $('#imageOut span').html(caption);
+}
+
 
 // Popover generator
 function updatePopover() {

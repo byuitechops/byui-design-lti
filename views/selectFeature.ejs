@@ -180,18 +180,26 @@
                     <div class="row">
                         <div class="option">
                             <div class="position">
-                                <input type="radio" name="position" value="left" id="calloutPosLeft" onchange="updateCalloutPosition()">
+                                <input type="radio" name="calloutPosition" value="left" onchange="updateCallout()" id="calloutPosLeft">
                                 <label for="calloutPosLeft">Left</label>
 
-                                <input type="radio" name="position" value="center" id="calloutPosCenter" onchange="updateCalloutPosition()">
+                                <input type="radio" name="calloutPosition" value="center" onchange="updateCallout()" id="calloutPosCenter">
                                 <label for="calloutPosCenter">Center</label>
 
-                                <input type="radio" name="position" value="right" id="calloutPosRight" onchange="updateCalloutPosition()">
+                                <input type="radio" name="calloutPosition" value="right" onchange="updateCallout()" id="calloutPosRight" checked>
                                 <label for="calloutPosRight">Right</label>
                             </div>
+                            <div class="size">
+                                <input type="radio" name="calloutSize" value="full" id="calloutSizeFull" onchange="updateCallout()">
+                                <label for="calloutSizeFull">Full</label>
 
-                            <p>full/half/quarter</p>
-                            <textarea placeholder="Content Text" onkeyup="updateCalloutText()"></textarea>
+                                <input type="radio" name="calloutSize" value="half" id="calloutSizeHalf" onchange="updateCallout()">
+                                <label for="calloutSizeHalf">Half</label>
+
+                                <input type="radio" name="calloutSize" value="half" id="calloutSizeQuarter" onchange="updateCallout()" checked>
+                                <label for="calloutSizeQuarter">Quarter</label>
+                            </div>
+                            <textarea placeholder="Content Text" onkeyup="updateCallout()"></textarea>
                         </div>
                         <div class="preview">
                             <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
@@ -318,14 +326,27 @@
                     </div>
                     <div class="row">
                         <div class="option">
-                            <p>left/right/center</p>
-                            <p>full/half/quarter</p>
-                            <p>clearfix</p>
-
-
-                            <p>SRC</p>
-                            <p>ALT</p>
-                            <p>Caption Text</p>
+                            <div class="position">
+                                <input type="radio" name="ImgPosition" value="left" onchange="updateImage()" id="imagePosLeft">
+                                <label for="imagePosLeft">Left</label>
+                                <input type="radio" name="ImgPosition" value="center" onchange="updateImage()" id="imagePosCenter">
+                                <label for="imagePosCenter">Center</label>
+                                <input type="radio" name="ImgPosition" value="right" onchange="updateImage()" id="imagePosRight" checked>
+                                <label for="imagePosRight">Right</label>
+                            </div>
+                            <div class="size">
+                                <input type="radio" name="ImgSize" value="full" id="imageSizeFull" onchange="updateImage()">
+                                <label for="imageSizeFull">Full</label>
+                                <input type="radio" name="ImgSize" value="half" id="imageSizeHalf" onchange="updateImage()">
+                                <label for="imageSizeHalf">Half</label>
+                                <input type="radio" name="ImgSize" value="quarter" id="imageSizeQuarter" onchange="updateImage()" checked>
+                                <label for="imageSizeQuarter">Quarter</label>
+                            </div>
+                            <input type="checkbox" id="clearfix" onchange="updateImage()">
+                            <label for="imageClearfix">Clearfix</label>
+                            <input type="text" placeholder="Source URL" oninput="updateImage()">
+                            <input type="text" placeholder="Alt Text" oninput="updateImage()">
+                            <input type="text" placeholder="Caption Text" oninput="updateImage()">
                         </div>
                         <div class="preview" id="imageOut">
                             <img class="left quarter" src="" alt="...">
