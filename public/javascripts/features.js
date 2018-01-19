@@ -35,20 +35,6 @@ function changeFocus(id) {
   }
 }
 
-// Dialog Generator
-function updateDialog() {
-  var title = $('#dialog .option input[placeholder="Dialog Title"]').val(),
-    prompt = $('#dialog .option input[placeholder="Prompt Text"]').val();
-    content = $('#dialog .option textarea').val(),
-    date = new Date().getTime();
-    $('#dialogOut div').attr('title', title);
-    $('#dialogOut a').text(prompt);
-    $('#dialogOut div').html(content);
-    $('#dialogOut div').attr('id', `dialog_for_link_${date}`);
-    $('#dialogOut a').attr('href', `#dialog_for_link_${date}`);
-    $('#dialogOut a').attr('id', date);
-}
-
 // Accordion generator
 function updateAccordion() {
   var heading = $('#accordion input').val();
@@ -57,18 +43,50 @@ function updateAccordion() {
   $('.accordion div').html(content);
 }
 
+// Callout generator
+function updateCallout() {
+  var content = $('#callout textarea').val();
+  $('#calloutOut span em').text(content);
+}
+
+// Column generator
+function updateColumn() {
+  var numCols = $('#columns .option input').val();
+
+  if (numCols < 1)
+    numCols = 1;
+  else if (numCols > 3)
+    numCols = 3;
+
+  $.each($('#columnsOut div.col-xs-6'), (i, ele) => {
+    $(ele).remove();
+  });
+
+  for (var i = 0; i < numCols; i++) {
+    $('#columnsOut .grid-row').append("<div class='col-xs-6'><ul><li>Lorem ipsum dolor</li><li>Lorem ipsum dolor</li></ul></div>");
+  }
+}
+
+// Dialog Generator
+function updateDialog() {
+  var title = $('#dialog .option input[placeholder="Dialog Title"]').val(),
+    prompt = $('#dialog .option input[placeholder="Prompt Text"]').val();
+  content = $('#dialog .option textarea').val(),
+    date = new Date().getTime();
+  $('#dialogOut div').attr('title', title);
+  $('#dialogOut a').text(prompt);
+  $('#dialogOut div').html(content);
+  $('#dialogOut div').attr('id', `dialog_for_link_${date}`);
+  $('#dialogOut a').attr('href', `#dialog_for_link_${date}`);
+  $('#dialogOut a').attr('id', date);
+}
+
 // Popover generator
 function updatePopover() {
   var text = $('#popover input').val();
   var content = $('#popover textarea').val();
   $('#popoverOut a').text(text);
   $('#popoverOut a').attr('title', content);
-}
-
-// Callout generator
-function updateCallout() {
-  var content = $('#callout textarea').val();
-  $('#calloutOut span em').text(content);
 }
 
 //init templates
