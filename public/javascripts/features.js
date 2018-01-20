@@ -129,6 +129,40 @@ function updateImage() {
   $('#imageOut span').html(caption);
 }
 
+// generate input tags & slides
+function updateSlideCount() {
+  var numSlides = $('#imgCarousel #numSlides').val(),
+  curSlides = $('#imgCarousel .option input').length - 1,
+  diff = numSlides - curSlides;
+
+  // don't allow them to delete all inputs
+  if (numSlides <= 0) {
+    return;
+  }
+
+  if (diff > 0) {
+    // add inputs & slides
+    for (var i = 0; i < diff; i++) {
+      $('#imgCarousel .option').append(`<input type="string" class="carouselSrcInput" onkeyup="updateCarousel()" placeholder="Img URL">`);
+      $('#imgCarouselOut .carousel').append(`<div class="slide"><img src="" alt="...">I am a slide</div>`);
+    }
+  } else if (diff < 0) {
+    //remove inputs & slides
+    for(var i = diff; i < 0; i++) {
+      $('#imgCarousel .option input:last-child').remove();
+      $('#imgCarouselOut .carousel .slide:last-child').remove();
+    }
+  }
+
+}
+
+// populate slides 
+function updateCarousel() {
+  $.each($('#imgCarouselOut .slide img'), (i, ele) => {
+    console.log(i);
+    $(ele).attr('src', $('.carouselSrcInput').eq(i).val());
+  });
+}
 
 // Popover generator
 function updatePopover() {
