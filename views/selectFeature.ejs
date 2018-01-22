@@ -468,15 +468,6 @@
             <a href="#orgTemplate">Org Template</a>
             <!--<a href="#templateSmall">Small Template</a>-->
         </nav>
-        <div class="row" id="homeTemplate">
-            <div class="option">
-                <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
-            </div>
-            <div class="preview" id="homeTemplateOut">
-                <%- homePage %>
-            </div>
-        </div>
-
         <div class="row" id="orgTemplate">
             <div class="option">
                 <a class="Button btn btn-primary" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a>
@@ -531,6 +522,14 @@
             <div class="hidden">
                 <%- templates %>
             </div>
+        </div>
+        <div class="row" id="homeTemplate">
+                <div class="option">
+                    <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
+                </div>
+                <div class="preview" id="homeTemplateOut">
+                    <%- homePage %>
+                </div>
         </div>
         <!--<div class="row" id="templateSmall">
             <div class="option">
