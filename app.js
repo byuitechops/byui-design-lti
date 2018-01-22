@@ -6,10 +6,12 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var ltiMiddleware = require("./express-ims-lti");
 var session = require('express-session');
-var index = require('./routes/index');
 var https = require('https');
 var fs = require('fs')
+var index = require('./routes/index');
 var app = express();
+
+//for local dev faux https
 if (!process.env.URL) {
   https.createServer({
     pfx: fs.readFileSync('crt/crt.pfx'),
@@ -23,14 +25,18 @@ app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+//pretty logs
 app.use(logger('dev'));
+
+//parses in comeing requests to JSON
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
 }));
 
+//Cookie Handler
 app.use(session({
-  secret: 'byui-content-session',
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: true
 }))
@@ -39,13 +45,14 @@ app.use(session({
 /********   This middleware and ims-lti dependency do not work with content-item, 
 Ben made his own fixes as a work-around, and pulled them out of node modules to push **********/
 
+//This handles the incomeing LTI Launch posts and auth
 app.use(ltiMiddleware({
-  consumer_key: "byui-designer",
-  consumer_secret: "byui-designer-secret"
+  consumer_key: process.env.LTI_KEY,
+  consumer_secret: process.env.LTI_SECRET
 }));
 
+//tells express what path to serve from
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', index)
 
 // catch 404 and forward to error handler

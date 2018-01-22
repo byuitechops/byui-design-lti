@@ -1,7 +1,6 @@
 /* eslint-env node */
 var express = require('express');
 var router = express.Router();
-var canvas = require('../modules/canvasApi');
 var generation = require('../modules/generation');
 var ejs = require('ejs');
 var fs = require('fs');
@@ -48,32 +47,6 @@ router.post('/', function (req, res, next) {
     courseClass: courseClass,
     templates: ejs.render(activityTemplates, {courseClass: courseClass}),
     homePage: homePage
-  })
-})
-
-/* return the templates to the interface for the course */
-router.get('/templates', function (req, res, next) {
-  if (!req.session.lti || process.env.IsHeroku) {
-    res.status(400).send({
-      error: "Canvas Authentication currently disabled"
-    })
-  } else {
-    var ltiParams = req.session.lti.params
-    var courseNumber = (ltiParams.content_item_return_url).split('/')[4];
-
-    canvas.getTemplateFolderId(courseNumber).then(canvas.getFilesByFolder).then(function (response) {
-      res.json({
-        templates: response
-      })
-    })
-  }
-})
-
-/* get the template to preview in the tool */
-router.get('/preview', function (req, res, next) {
-  var url = req.query.url;
-  canvas.getFile(url).then(function (file) {
-    res.send(file)
   })
 })
 
