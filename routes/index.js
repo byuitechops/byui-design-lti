@@ -6,7 +6,7 @@ var ejs = require('ejs');
 var fs = require('fs');
 
 require.extensions['.ejs'] = function (module, filename) {
-  module.exports = fs.readFileSync(filename, 'utf8');
+    module.exports = fs.readFileSync(filename, 'utf8');
 };
 
 var activityTemplates = require('../views/templates.ejs')
@@ -25,6 +25,7 @@ router.post('/', function (req, res, next) {
   var ltiParams = req.session.lti.params
   /* prepare the class (B 380 -> b380) */
   var courseClass = ltiParams.context_label.toLowerCase().replace(" ", "")
+  console.log(courseClass);
   var courseNumber = (ltiParams.content_item_return_url).split('/')[4];
   var courseName = ltiParams.context_title;
   var homePage = generation.renderHomePage(courseName, courseNumber, courseClass);
@@ -36,20 +37,16 @@ router.post('/', function (req, res, next) {
       "mediaType": "text/html",
       "placementAdvice": {
         "presentationDocumentTarget": "embed"
-      }
-    }]
+        }
+      }]
   }
-
-  console.log(courseClass);
 
   res.render('selectFeature', {
     contentItems: JSON.stringify(content_items),
     returnUrl: req.session.lti.params.content_item_return_url,
     courseNumber: courseNumber,
     courseClass: courseClass,
-    templates: ejs.render(activityTemplates, {
-      courseName: courseName
-    }),
+    templates: ejs.render(activityTemplates, {courseClass: courseClass}),
     homePage: homePage
   })
 })
