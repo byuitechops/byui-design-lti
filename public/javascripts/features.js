@@ -144,7 +144,7 @@ function updateSlideCount() {
     // add inputs & slides
     for (var i = 0; i < diff; i++) {
       $('#imgCarousel .option').append(`<input type="string" class="carouselSrcInput" onkeyup="updateCarousel()" placeholder="Img URL">`);
-      $('#imgCarouselOut .carousel').append(`<div class="slide"><img src="" alt="...">I am a slide</div>`);
+      $('#imgCarouselOut .carousel').append(`<div class="slide"><img src="" alt="..."></div>`);
     }
   } else if (diff < 0) {
     //remove inputs & slides
@@ -162,6 +162,11 @@ function updateCarousel() {
     console.log(i);
     $(ele).attr('src', $('.carouselSrcInput').eq(i).val());
   });
+}
+
+// table css
+function updateTable() {
+  $('#tableOut table').toggleClass('table-striped');
 }
 
 // Popover generator
