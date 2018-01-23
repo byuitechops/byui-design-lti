@@ -122,7 +122,8 @@ nav {
     margin-top: -77px;
 }
 
-.features>div>div:last-child {
+.features>div>div:last-child,
+#pageTwo .buttonWrapper {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 12px;
