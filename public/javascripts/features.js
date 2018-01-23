@@ -122,7 +122,7 @@ function updateImage() {
   if (source == '') {
     source = '...'
   }
-  
+
   $('#imageOut img').attr('alt', alt);
   $('#imageOut img').attr('src', source);
   $('#imageOut span').html(caption);
@@ -131,8 +131,8 @@ function updateImage() {
 // generate input tags & slides
 function updateSlideCount() {
   var numSlides = $('#imgCarousel #numSlides').val(),
-  curSlides = $('#imgCarousel .option input').length - 1,
-  diff = numSlides - curSlides;
+    curSlides = $('#imgCarousel .option input').length - 1,
+    diff = numSlides - curSlides;
 
   // don't allow them to delete all inputs
   if (numSlides <= 0) {
@@ -147,7 +147,7 @@ function updateSlideCount() {
     }
   } else if (diff < 0) {
     //remove inputs & slides
-    for(var i = diff; i < 0; i++) {
+    for (var i = diff; i < 0; i++) {
       $('#imgCarousel .option input:last-child').remove();
       $('#imgCarouselOut .carousel .slide:last-child').remove();
     }
@@ -207,23 +207,31 @@ function preview(url) {
 }
 
 //  Activity Banner Builder
-var selected = document.getElementById("activitySelected"),
-  bannerDiv = document.getElementById("bannerOut")
+var bannerDiv = document.getElementById("bannerOut2");
 
 function changeBanner(e) {
-  var classNames = selected.value,
+  var selected = e.target,
+    classNames = selected.value,
     bannerText = selected.options[selected.selectedIndex].label,
-    h2Code
+    h2Code;
 
   if (bannerText === "Other") {
     bannerText = "Activity Name";
     classNames = "other";
-  }
-  h2Code = '<h2 class="activity ' + classNames.split(' ')[1] + '">' + bannerText + '</h2>';
-  bannerDiv.innerHTML = h2Code;
+  } else if (bannerText === "None") {
+    // If none is selected, remove innerHTML
+    bannerDiv.innerHTML = '';
+    return;
+  } 
+    h2Code = '<h2 class="activity ' + classNames.split(' ')[1] + '">' + bannerText + '</h2>';
+    // append h2 to html
+    bannerDiv.innerHTML = h2Code;
 }
 
-selected.onchange = changeBanner;
+// event listeners for activity banners
+// document.getElementById('activitySelected').onchange = changeBanner;
+document.getElementById('activitySelected2').onchange = changeBanner;
+// selected.onchange = changeBanner;
 
 //  Accordion init
 $(document).ready(function () {

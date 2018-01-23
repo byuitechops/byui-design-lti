@@ -36,8 +36,8 @@
         <div id="pageOne" class="page visible">
             <nav>
                 <a href="#accordion">Accordion</a>
-                <!-- <a href="#banner">Activity Banner</a> -->
-                <a href="#bannerImg">Banner Image</a>
+                <a href="#banner">Activity Banner</a>
+                <!-- <a href="#bannerImg">Banner Image</a> -->
                 <!-- <a href="#button">Button</a> -->
                 <a href="#callout">Callout</a>
                 <a href="#columns">Columns</a>
@@ -133,7 +133,7 @@
                     </div>
                 </div>
 
-                <div id="bannerImg">
+                <!-- <div id="bannerImg">
                     <h2>Banner Image</h2>
                     <div>
                         <p>Guidelines</p>
@@ -152,7 +152,7 @@
                     <div>
                         <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
                     </div>
-                </div>
+                </div> -->
 
                 <div id="button">
                     <h2>Button</h2>
@@ -474,64 +474,106 @@
             <a href="#homeTemplate">Home Page</a>
             <!--<a href="#templateSmall">Small Template</a>-->
         </nav>
-        <!-- <div class="row" id="orgTemplate"> -->
         <div id="orgTemplate">
             <div class="row">
                 <div class="option">
+                    <select id="activitySelected2">
+                        <optgroup label="Prepare">
+                            <option value="prepare caseStudy">Case Study</option>
+                            <option value="prepare checkUnderstanding">Check-Your-Understanding</option>
+                            <option value="prepare preAssessment">Pre-Assessment</option>
+                            <option value="prepare readings">Readings</option>
+                            <option value="prepare research">Research</option>
+                            <option value="prepare video">Video</option>
+                        </optgroup>
+                        <optgroup label="Teach One Another">
+                            <option value="teach caseStudy">Case Study</option>
+                            <option value="teach fieldExperience">Field Experience Sharing</option>
+                            <option value="teach groupPresentation">Group Presentation</option>
+                            <option value="teach groupProblemSolving">Group Problem Solving</option>
+                            <option value="teach groupProject">Group Project</option>
+                            <option value="teach iceBreaker">Ice-Breaker</option>
+                            <option value="teach insightSharing">Insight Sharing</option>
+                            <option value="teach jigsawActivity">Jigsaw Activity</option>
+                            <option value="teach peerAccountability">Peer Accountability</option>
+                            <option value="teach peerFeedback">Peer Feedback</option>
+                            <option value="teach rolePlayDiscussion">Role Play Discussion</option>
+                            <option value="teach structuredDebate">Structured Debate</option>
+                            <option value="teach studyGroup">Study Group</option>
+                            <option value="teach supportForum">Support Forum</option>
+                            <option value="teach topicDiscussion">Topic Discussion</option>
+                        </optgroup>
+                        <optgroup label="Ponder and Prove">
+                            <option value="ponder assessment">Assessment</option>
+                            <option value="ponder demonstrateProficiency">Demonstrate Proficiency</option>
+                            <option value="ponder practiceApply">Practice/Apply</option>
+                            <option value="ponder presentation">Presentation</option>
+                            <option value="ponder reflection">Reflection</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="other">Other</option>
+                            <option value="None">None</option>
+                        </optgroup>
+                    </select>
                     <br>
                     <select id="selectTemplate">
                         <option disabled selected value>Select a template</option>
                         <option value="1">Generic Activity Instructions</option>
                         <option value="37">Generic Quiz Instructions</option>
                         <!-- <option value="2">Prepare - Read/Watch/Listen</option>
-                    <option value="3">Prepare - Read/Watch/Listen (Instructions in another activity)</option>
-                    <option value="4">Prepare - Pre-Assesment</option>
-                    <option value="5">Prepare - Interview</option>
-                    <option value="6">Prepare - Concept Matching</option>
-                    <option value="7">Prepare - Note Taking</option>
-                    <option value="8">Prepare - Information Gathering</option>
-                    <option value="9">Prepare - Scholarly Research</option>
-                    <option value="10">Prepare - Learning Contract</option>
-                    <option value="11">Prepare - Project Plan</option>
-                    <option value="12">Prepare - Sign Up</option>
-                    <option value="13">Prepare - Quiz Writing</option>
-                    <option value="14">TOA - Presentation</option>
-                    <option value="15">TOA - Case Study</option>
-                    <option value="16">TOA - Field Experience</option>
-                    <option value="17">TOA - Group Problem Solving</option>
-                    <option value="18">TOA - Group Project</option>
-                    <option value="19">TOA - Icebreaker</option>
-                    <option value="20">TOA - Insight Sharing</option>
-                    <option value="21">TOA - Jigsaw Teaching</option>
-                    <option value="22">TOA - Peer Accountability</option>
-                    <option value="23">TOA - Peer Feedback</option>
-                    <option value="24">TOA - Q&amp;A/Support Forum</option>
-                    <option value="25">TOA - Role Play Discussion</option>
-                    <option value="26">TOA - Structured Debate</option>
-                    <option value="27">TOA - Study Group</option>
-                    <option value="28">TOA - Topic Discussion</option>
-                    <option value="38">Ponder/Prove - Reflective Write-Up</option>
-                    <option value="29">Ponder/Prove - Unanswered Questions</option>
-                    <option value="30">Ponder/Prove - Quiz</option>
-                    <option value="31">Ponder/Prove - Exam</option>
-                    <option value="32">Ponder/Prove - Presentation</option>
-                    <option value="33">Ponder/Prove - Project</option>
-                    <option value="34">Ponder/Prove - Essay</option>
-                    <option value="35">Ponder/Prove - Worksheet-Workbook</option> 
-                    <option value="36">Ponder/Prove - Portfolio</option> -->
+                        <option value="3">Prepare - Read/Watch/Listen (Instructions in another activity)</option>
+                        <option value="4">Prepare - Pre-Assesment</option>
+                        <option value="5">Prepare - Interview</option>
+                        <option value="6">Prepare - Concept Matching</option>
+                        <option value="7">Prepare - Note Taking</option>
+                        <option value="8">Prepare - Information Gathering</option>
+                        <option value="9">Prepare - Scholarly Research</option>
+                        <option value="10">Prepare - Learning Contract</option>
+                        <option value="11">Prepare - Project Plan</option>
+                        <option value="12">Prepare - Sign Up</option>
+                        <option value="13">Prepare - Quiz Writing</option>
+                        <option value="14">TOA - Presentation</option>
+                        <option value="15">TOA - Case Study</option>
+                        <option value="16">TOA - Field Experience</option>
+                        <option value="17">TOA - Group Problem Solving</option>
+                        <option value="18">TOA - Group Project</option>
+                        <option value="19">TOA - Icebreaker</option>
+                        <option value="20">TOA - Insight Sharing</option>
+                        <option value="21">TOA - Jigsaw Teaching</option>
+                        <option value="22">TOA - Peer Accountability</option>
+                        <option value="23">TOA - Peer Feedback</option>
+                        <option value="24">TOA - Q&amp;A/Support Forum</option>
+                        <option value="25">TOA - Role Play Discussion</option>
+                        <option value="26">TOA - Structured Debate</option>
+                        <option value="27">TOA - Study Group</option>
+                        <option value="28">TOA - Topic Discussion</option>
+                        <option value="38">Ponder/Prove - Reflective Write-Up</option>
+                        <option value="29">Ponder/Prove - Unanswered Questions</option>
+                        <option value="30">Ponder/Prove - Quiz</option>
+                        <option value="31">Ponder/Prove - Exam</option>
+                        <option value="32">Ponder/Prove - Presentation</option>
+                        <option value="33">Ponder/Prove - Project</option>
+                        <option value="34">Ponder/Prove - Essay</option>
+                        <option value="35">Ponder/Prove - Worksheet-Workbook</option>
+                        <option value="36">Ponder/Prove - Portfolio</option> -->
                     </select>
                     <br>
                     <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>
                 </div>
-                <div class="preview" id="orgTemplateOut">
-                    <p>Please select an option to the left</p>
+                <div class="preview" id="customTemplateOut">
+                    <div class="byui" id="bannerOut2">
+                        
+                    </div>
+                    <div id="orgTemplateOut">
+                        <p>Please select an option to the left</p>
+                    </div>
                 </div>
             </div>
             <div class="hidden">
                 <%- templates %>
             </div>
             <div class="buttonWrapper">
-                <a class="Button btn btn-primary" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a>
+                <a class="Button btn btn-primary" href="#" onclick="respond('customTemplate')">Insert Activity Template</a>
             </div>
         </div>
 
