@@ -129,8 +129,11 @@ nav {
     padding-bottom: 12px;
 }
 
+#feedback {
+    margin-left:10px;
+}
+
 .option {
-    /*    border-right: #ccc solid 1px;*/
     padding-right: 30px;
     padding-bottom: 8px;
     margin-bottom: 0;

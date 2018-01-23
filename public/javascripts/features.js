@@ -218,9 +218,6 @@ function changeBanner(e) {
   if (bannerText === "Other") {
     bannerText = "Activity Name";
     classNames = "other";
-  } else {
-    var newHeading = $('#activitySelected :selected').parent().attr('label')
-    bannerText = bannerText;
   }
   h2Code = '<h2 class="activity ' + classNames.split(' ')[1] + '">' + bannerText + '</h2>';
   bannerDiv.innerHTML = h2Code;
