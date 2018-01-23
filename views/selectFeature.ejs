@@ -468,15 +468,6 @@
             <a href="#orgTemplate">Org Template</a>
             <!--<a href="#templateSmall">Small Template</a>-->
         </nav>
-        <div class="row" id="homeTemplate">
-            <div class="option">
-                <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
-            </div>
-            <div class="preview" id="homeTemplateOut">
-                <%- homePage %>
-            </div>
-        </div>
-
         <div class="row" id="orgTemplate">
             <div class="option">
                 <a class="Button btn btn-primary" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a>
@@ -532,6 +523,14 @@
                 <%- templates %>
             </div>
         </div>
+        <div class="row" id="homeTemplate">
+                <div class="option">
+                    <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
+                </div>
+                <div class="preview" id="homeTemplateOut">
+                    <%- homePage %>
+                </div>
+        </div>
         <!--<div class="row" id="templateSmall">
             <div class="option">
                 <a class="Button btn btn-primary" href="#" onclick="respond('templateSmall')">Insert Page Template</a>
@@ -578,6 +577,9 @@
             </div>
         </div>-->
     </div>
+    </div>
+    <div id="feedback">
+        If you have any suggestions, please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKGVIxdFEr9h8ctMhXMrs2urnTnUFiLm8GzxhrMbooWGx1Ew/viewform?usp=sf_link">Google Form</a>.
     </div>
     <!---------------- Don't Mess with this stuff --------- -->
     <!-- This form is used to insert web features into the Canvas WYSISYG -->

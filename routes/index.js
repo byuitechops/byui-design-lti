@@ -25,6 +25,7 @@ router.post('/', function (req, res, next) {
   var ltiParams = req.session.lti.params
   /* prepare the class (B 380 -> b380) */
   var courseClass = ltiParams.context_label.toLowerCase().replace(" ", "")
+  console.log(courseClass);
   var courseNumber = (ltiParams.content_item_return_url).split('/')[4];
   var courseName = ltiParams.context_title;
   var homePage = generation.renderHomePage(courseName, courseNumber, courseClass);
