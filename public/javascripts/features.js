@@ -207,13 +207,18 @@ function preview(url) {
 }
 
 //  Activity Banner Builder
-var bannerDiv = document.getElementById("bannerOut2");
-
 function changeBanner(e) {
   var selected = e.target,
     classNames = selected.value,
     bannerText = selected.options[selected.selectedIndex].label,
-    h2Code;
+    h2Code,
+    bannerDiv;
+
+  if(selected.id.includes('2')) {
+    bannerDiv = document.getElementById('bannerOut2');
+  } else {
+    bannerDiv = document.getElementById('bannerOut');
+  }
 
   if (bannerText === "Other") {
     bannerText = "Activity Name";
@@ -222,16 +227,15 @@ function changeBanner(e) {
     // If none is selected, remove innerHTML
     bannerDiv.innerHTML = '';
     return;
-  } 
-    h2Code = '<h2 class="activity ' + classNames.split(' ')[1] + '">' + bannerText + '</h2>';
-    // append h2 to html
-    bannerDiv.innerHTML = h2Code;
+  }
+  h2Code = '<h2 class="activity ' + classNames.split(' ')[1] + '">' + bannerText + '</h2>';
+  // append h2 to html
+  bannerDiv.innerHTML = h2Code;
 }
 
 // event listeners for activity banners
-// document.getElementById('activitySelected').onchange = changeBanner;
+document.getElementById('activitySelected').onchange = changeBanner;
 document.getElementById('activitySelected2').onchange = changeBanner;
-// selected.onchange = changeBanner;
 
 //  Accordion init
 $(document).ready(function () {
