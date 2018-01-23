@@ -29,9 +29,9 @@ function changeFocus(id) {
     $("#" + id).addClass('visible')
   }
 
-  if (id === 'pageTwo' && $.trim($('#templates').html()) === "") {
+  /* if (id === 'pageTwo' && $.trim($('#templates').html()) === "") {
     loadTemplates();
-  }
+  } */
 }
 
 // Accordion generator
@@ -177,7 +177,7 @@ function updatePopover() {
 }
 
 //init templates
-function loadTemplates() {
+/* function loadTemplates() {
   $('#templateOut').html('<h4>Loading Templates...</h4>')
   if ($.trim($('#templates').html()) === '') {
     $.get('/templates').done(function (response) {
@@ -194,7 +194,7 @@ function loadTemplates() {
       $('#templateOut').html('<h4>Templating currently not supported on prod</h4>')
     })
   }
-}
+} */
 
 // Preview templates
 function preview(url) {
