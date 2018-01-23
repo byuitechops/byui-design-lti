@@ -31,4 +31,12 @@ Do this by running the commands above with the correct keys.
 
 Example: `set LTI_SECRET=asldkjalk`
 
+## How to Set Up a Dev Instance of the LTI Tool in Canvas
+
+1. Open the Add LTI tool dialog box.
+1. Choose Paste XML from the top drop down box
+1. Name the tool
+1. Paste in the Key and Secret
+1. Paste the contents of the devSetup.xml file ignoring the comment lines.
+
 
