@@ -468,15 +468,16 @@
             <a href="#orgTemplate">Org Template</a>
             <!--<a href="#templateSmall">Small Template</a>-->
         </nav>
-        <div class="row" id="orgTemplate">
-            <div class="option">
-                <a class="Button btn btn-primary" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a>
-                <br>
-                <select id="selectTemplate">
-                    <option disabled selected value>Select a template</option>
-                    <option value="1">Generic Activity Instructions</option>
-                    <option value="37">Generic Quiz Instructions</option>
-                    <!-- <option value="2">Prepare - Read/Watch/Listen</option>
+        <!-- <div class="row" id="orgTemplate"> -->
+        <div id="orgTemplate">
+            <div class="row">
+                <div class="option">
+                    <br>
+                    <select id="selectTemplate">
+                        <option disabled selected value>Select a template</option>
+                        <option value="1">Generic Activity Instructions</option>
+                        <option value="37">Generic Quiz Instructions</option>
+                        <!-- <option value="2">Prepare - Read/Watch/Listen</option>
                     <option value="3">Prepare - Read/Watch/Listen (Instructions in another activity)</option>
                     <option value="4">Prepare - Pre-Assesment</option>
                     <option value="5">Prepare - Interview</option>
@@ -512,24 +513,28 @@
                     <option value="34">Ponder/Prove - Essay</option>
                     <option value="35">Ponder/Prove - Worksheet-Workbook</option> 
                     <option value="36">Ponder/Prove - Portfolio</option> -->
-                </select>
-                <br>
-                <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>
+                    </select>
+                    <br>
+                    <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>
+                </div>
+                <div class="preview" id="orgTemplateOut">
+                    <p>Please select an option to the left</p>
+                </div>
             </div>
-            <div class="preview" id="orgTemplateOut">
-                <p>Please select an option to the left</p>
+            <div>
+                <a class="Button btn btn-primary" href="#" onclick="respond('orgTemplate')">Insert Activity Template</a>
             </div>
             <div class="hidden">
                 <%- templates %>
             </div>
         </div>
         <div class="row" id="homeTemplate">
-                <div class="option">
-                    <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
-                </div>
-                <div class="preview" id="homeTemplateOut">
-                    <%- homePage %>
-                </div>
+            <div class="option">
+                <a class="Button btn btn-primary" href="#" onclick="respond('homeTemplate')">Insert Home Page</a>
+            </div>
+            <div class="preview" id="homeTemplateOut">
+                <%- homePage %>
+            </div>
         </div>
         <!--<div class="row" id="templateSmall">
             <div class="option">
@@ -579,7 +584,8 @@
     </div>
     </div>
     <div id="feedback">
-        If you have any suggestions, please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKGVIxdFEr9h8ctMhXMrs2urnTnUFiLm8GzxhrMbooWGx1Ew/viewform?usp=sf_link">Google Form</a>.
+        If you have any suggestions, please use this
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKGVIxdFEr9h8ctMhXMrs2urnTnUFiLm8GzxhrMbooWGx1Ew/viewform?usp=sf_link">Google Form</a>.
     </div>
     <!---------------- Don't Mess with this stuff --------- -->
     <!-- This form is used to insert web features into the Canvas WYSISYG -->

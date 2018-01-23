@@ -22,7 +22,6 @@ function updateButton() {
 
 $('#button input:checkbox').change(updateButton)
 
-
 // Change pages
 function changeFocus(id) {
   if (!$("#" + id).hasClass('visible')) {
