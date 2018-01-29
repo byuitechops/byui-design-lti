@@ -153,3 +153,7 @@ nav {
     flex-grow: 1;
     flex-wrap: nowrap;
 }
+
+.shaded {
+    background-color: #D8D8D8;
+}

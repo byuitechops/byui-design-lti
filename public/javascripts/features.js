@@ -22,6 +22,32 @@ function updateButton() {
 
 $('#button input:checkbox').change(updateButton)
 
+// Callout generator
+function updateCallout() {
+  var content = $('#callout textarea').val(),
+    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
+
+  // remove existing position & size classes
+  classesToRemove.forEach((classToRemove) => {
+    if ($('#calloutOut>span').hasClass(classToRemove)) {
+      $('#calloutOut>span').removeClass(classToRemove);
+    }
+  });
+
+  // add new position & size classes
+  $('#calloutOut>span').addClass($('#callout .position input[type="radio"]:checked').attr('value'));
+  $('#calloutOut>span').addClass($('#callout .size input[type="radio"]:checked').attr('value'));
+  if ($('#callout input:checkbox').is(':checked')) {
+    $('#calloutOut>span').addClass("shaded")
+  } else {
+    $('#calloutOut>span').removeClass("shaded")
+  }
+  if (content != '')
+    $('#calloutOut span em').text(content);
+}
+
+$('#callout input:checkbox').change(updateCallout)
+
 // Change pages
 function changeFocus(id) {
   if (!$("#" + id).hasClass('visible')) {
@@ -40,26 +66,6 @@ function updateAccordion() {
   var content = $('#accordion textarea').val();
   $('.accordion h3').text(heading);
   $('.accordion div').html(content);
-}
-
-// Callout generator
-function updateCallout() {
-  var content = $('#callout textarea').val(),
-    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
-
-  // remove existing position & size classes
-  classesToRemove.forEach((classToRemove) => {
-    if ($('#calloutOut>span').hasClass(classToRemove)) {
-      $('#calloutOut>span').removeClass(classToRemove);
-    }
-  });
-
-  // add new position & zise classes
-  $('#calloutOut>span').addClass($('#callout .position input[type="radio"]:checked').attr('value'));
-  $('#calloutOut>span').addClass($('#callout .size input[type="radio"]:checked').attr('value'));
-
-  if (content != '')
-    $('#calloutOut span em').text(content);
 }
 
 // Column generator
