@@ -365,6 +365,44 @@
                     </div>
                 </div>
 
+                <div id="video">
+                    <h2>Video</h2>
+                    <div>
+                        <p>Guidelines</p>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <div class="position">
+                                <input type="radio" name="VidPosition" value="left" onchange="updateVideo()" id="videoPosLeft">
+                                <label for="videoPosLeft">Left</label>
+                                <input type="radio" name="VidPosition" value="center" onchange="updateVideo()" id="videoPosCenter">
+                                <label for="videoPosCenter">Center</label>
+                                <input type="radio" name="VidPosition" value="right" onchange="updateVideo()" id="videoPosRight" checked>
+                                <label for="videoPosRight">Right</label>
+                            </div>
+                            <div class="size">
+                                <input type="radio" name="VidSize" value="full" id="videoSizeFull" onchange="updateVideo()">
+                                <label for="videoSizeFull">Full</label>
+                                <input type="radio" name="VidSize" value="half" id="videoSizeHalf" onchange="updateVideo()">
+                                <label for="videoSizeHalf">Half</label>
+                                <input type="radio" name="VidSize" value="quarter" id="videoSizeQuarter" onchange="updateVideo()" checked>
+                                <label for="videoSizeQuarter">Quarter</label>
+                            </div>
+                            <input type="checkbox" id="clearfix" onchange="updateVideo()">
+                            <label for="videoClearfix">Clearfix</label>
+                            <input type="text" placeholder="Source URL" oninput="updateVideo()">
+                            <input type="text" placeholder="Alt Text" oninput="updateVideo()">
+                            <input type="text" placeholder="Caption Text" oninput="updateVideo()">
+                        </div>
+                        <div class="preview" id="videoOut">
+                            <span class="caption">Insert Caption Text Here</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="Button btn btn-primary" href="#" onclick="respond('video')">Insert Video</a>
+                    </div>
+                </div>
+
                 <div id="imgCarousel">
                     <h2>Image Carousel</h2>
                     <div>

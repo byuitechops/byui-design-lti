@@ -134,6 +134,39 @@ function updateImage() {
   $('#imageOut span').html(caption);
 }
 
+function updateVideo() {
+  var source = $('#video .option input[placeholder="Source URL"]').val(),
+    alt = $('#video .option input[placeholder="Alt Text"]').val(),
+    caption = $('#video .option input[placeholder="Caption Text"]').val(),
+    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
+
+  // remove size & position classes from img
+  classesToRemove.forEach((classToRemove) => {
+    if ($('#videoOut>img').hasClass(classToRemove)) {
+      $('#videoOut>img').removeClass(classToRemove);
+    }
+  });
+  // add size & position classes
+  $('#videoOut>img').addClass($('#video .position input[type="radio"]:checked').attr('value'));
+  $('#videoOut>img').addClass($('#video .size input[type="radio"]:checked').attr('value'));
+
+  // add/remove clearfix
+  if ($('#video .option input[type="checkbox"]').is(':checked')) {
+    $('#videoOut').addClass("clearfix");
+  } else {
+    $('#videoOut').removeClass("clearfix");
+  }
+
+  // Don't set alt to empty string
+  if (source == '') {
+    source = '...'
+  }
+
+  $('#videoOut img').attr('alt', alt);
+  $('#videoOut img').attr('src', source);
+  $('#videoOut span').html(caption);
+}
+
 // generate input tags & slides
 function updateSlideCount() {
   var numSlides = $('#imgCarousel #numSlides').val(),
