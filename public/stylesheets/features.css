@@ -27,7 +27,7 @@
 }
 
 input[type="text"],
-select,
+/* select, */
 textarea {
     width: 100%;
     margin: 10px 0 0;
@@ -156,4 +156,8 @@ nav {
 
 .shaded {
     background-color: #D8D8D8;
+}
+
+.templateLabel {
+    margin-bottom: 0px;
 }
