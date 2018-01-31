@@ -37,7 +37,7 @@
             <nav>
                 <a href="#accordion">Accordion</a>
                 <a href="#banner">Activity Banner</a>
-                <!-- <a href="#bannerImg">Banner Image</a> -->
+                <a href="#bannerImg">Banner Img</a>
                 <a href="#button">Button</a>
                 <a href="#callout">Callout</a>
                 <a href="#columns">Columns</a>
@@ -133,26 +133,24 @@
                     </div>
                 </div>
 
-                <!-- <div id="bannerImg">
+                <div id="bannerImg">
                     <h2>Banner Image</h2>
                     <div>
                         <p>Guidelines</p>
                     </div>
                     <div class="row">
                         <div class="option">
-                            <p>Are we using these?</p>
                         </div>
                         <div class="preview" id="bannerImgOut">
                             <div id="header">
-                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/Web%20Files/homeImage.jpg"
-                                    alt="Course Banner" />
+                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/template/courseBanner.jpg" alt="Course Banner" />
                             </div>
                         </div>
                     </div>
                     <div>
                         <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
                     </div>
-                </div> -->
+                </div>
 
                 <div id="button">
                     <h2>Button</h2>
@@ -371,6 +369,7 @@
                     <div class="row">
                         <div class="option">
                             <input type="string" id="numSlides" placeholder="Number of slides?" onkeyup="updateSlideCount()">
+                            <input type="string" id="maxHeight" placeholder="Max height" onkeyup="updateMaxHeight()">
                             <!-- <input type="string" id="" onkeyup="updateImgCarousel()" placeholder="Img URL"> -->
                         </div>
                         <div class="preview" id="imgCarouselOut">
