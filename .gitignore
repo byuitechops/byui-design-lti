@@ -1,3 +1,4 @@
 node_modules/
 canvasAuth.js
 keysToolboxDev.txt
+.vscode/settings.json

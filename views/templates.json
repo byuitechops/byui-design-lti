@@ -1,6 +1,8 @@
-<div id="template_1">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+{
+    "0": {
+        "title": "Generic Activity Instructions",
+        "banner": "",   
+        "template": "<h2>Overview</h2>
         <p>In this activity, you will
             [specify
                 <strong>deliverable/action to be taken] </strong>
@@ -35,12 +37,13 @@
             (You may also combine this with the submission or other requirements specified above)
         </p>
         <p>You will be graded using the criteria below
-            [include criteria and levels].</p>
-    </div>
-</div>
-<div id="template_2">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+            [include criteria and levels].</p>"
+            },
+
+        "1": {
+            "title": "Prepare - Read/Watch/Listen",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>
             
                 <strong>[Read/Watch/Listen to][name of material]</strong>
@@ -59,7 +62,7 @@
             <li>
                 [Process Requirements? If any, indicate]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [List of things to read/watch/listen to]
                 </li>
@@ -73,12 +76,13 @@
             (You may also combine this with the submission or other requirements specified above)
         </p>
         <p>You will be graded using the criteria below
-            [include criteria and levels].</p>
-    </div>
-</div>
-<div id="template_3">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview </h2>
+            [include criteria and levels].</p>"
+            },
+
+        "2": {
+            "title": "Prepare - Read/Watch/Listen (Instructions in another activity)",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <h2>Preparation</h2>
         <p>In order to complete
             [name of TOA/Ponder/Prove activity], you will need to
@@ -103,12 +107,13 @@
             (You may also combine this with the submission or other requirements specified above)
         </p>
         <p>You will be graded using the criteria below
-            [include criteria and levels].</p>
-    </div>
-</div>
-<div id="template_4">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview </h2>
+            [include criteria and levels].</p>"
+            },
+
+        "3": {
+            "title": "Prepare - Pre-Assesment",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>complete</strong> a
             <strong>pre-assessment to determine your understanding</strong> of
@@ -124,7 +129,7 @@
             <li>
                 [Quiz responses should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether it will be completed individually or by group]
                 </li>
@@ -138,14 +143,14 @@
             <li>
                 [Quiz responses should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].</li>
             </ol>
             <li>
                 [Quiz responses should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If group quiz, then include expectations of members as well as criteria for grading individuals and
                         groups]
@@ -155,12 +160,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
-<div id="template_5">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview </h2>
+        </p>"
+        },
+
+        "4": {
+            "title": "Prepare - Interview",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>interview</strong>
             [describe and
@@ -178,7 +184,7 @@
             <li>
                 [Interview should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether it will be completed individually or by group]
                 </li>
@@ -192,21 +198,21 @@
             <li>
                 [Interview should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].</li>
             </ol>
             <li>
                 [Interview should show clear understanding of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate specific topics to cover and when].</li>
             </ol>
             <li>
                 [Interview should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If group interview, then include expectations of members as well as criteria for grading individuals
                         and groups]
@@ -220,13 +226,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_6">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "5": {
+            "title": "Prepare - Concept Matching",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will complete a
             <strong>concept map</strong> to
             <strong>demonstrate</strong> your
@@ -243,7 +249,7 @@
             <li>
                 [Concept map should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate what a concept map is and what it is not; example map be be useful]
                 </li>
@@ -257,14 +263,14 @@
             <li>
                 [Concept map should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].</li>
             </ol>
             <li>
                 [Concept map should show clear understanding of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate specific topics that should be represented].
                 </li>
@@ -272,7 +278,7 @@
             <li>
                 [Concept map should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Include criteria for grading]
                 </li>
@@ -285,13 +291,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_7">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "6": {
+            "title": "Prepare - Note Taking",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will be asked to
             <strong>take notes on</strong>
             [describe and
@@ -306,7 +312,7 @@
             <li>
                 [Note taking should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether it will be completed individually or by group]
                 </li>
@@ -320,7 +326,7 @@
             <li>
                 [Note taking should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -328,7 +334,7 @@
             <li>
                 [Note taking should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether a deliverable is required for this activity]
                 </li>
@@ -341,13 +347,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_8">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "7": {
+            "title": "Prepare - Information Gathering",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>gather information on</strong>
             [describe and
@@ -364,7 +370,7 @@
             <li>
                 [Info gathering should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -381,7 +387,7 @@
             <li>
                 [Info gathering should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -389,7 +395,7 @@
             <li>
                 [Info gathering should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -403,13 +409,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_9">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "8": {
+            "title": "Prepare - Scholarly Research",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>conduct research on</strong>
              [describe and
@@ -426,7 +432,7 @@
             <li>
                 [Research should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -446,7 +452,7 @@
             <li>
                 [Research should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -454,7 +460,7 @@
             <li>
                 [Research should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -468,13 +474,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_10">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "9": {
+            "title": "Prepare - Learning Contract",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>create a learning contract outlining</strong>
              [describe and
@@ -490,7 +496,7 @@
             <li>
                 [Learning contract should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -504,7 +510,7 @@
             <li>
                 [Learning contract should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -512,7 +518,7 @@
             <li>
                 [Learning contract should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if there are multiple deliverables]
                 </li>
@@ -521,13 +527,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_11">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "10": {
+            "title": "Prepare - Project Plan",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>create a project plan for</strong>
              [identify and
@@ -545,7 +551,7 @@
             <li>
                 [Project plan should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -562,7 +568,7 @@
             <li>
                 [Project plan should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -570,7 +576,7 @@
             <li>
                 [Project plan should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if there are multiple deliverables]
                 </li>
@@ -583,13 +589,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_12">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "11": {
+            "title": "Prepare - Sign Up",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>sign up for</strong>
              [describe and
@@ -605,7 +611,7 @@
             <li>
                 [Sign up should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any unique steps and/or resources needed to complete]
                 </li>
@@ -613,7 +619,7 @@
             <li>
                 [Sign up should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -621,7 +627,7 @@
             <li>
                 [Sign up should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If graded then include any needed grading criteria]
                 </li>
@@ -630,13 +636,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_13">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "12": {
+            "title": "Prepare - Quiz Writing",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>create and submit quiz questions for</strong>
              [describe and
@@ -651,7 +657,7 @@
             <li>
                 [Quiz questions should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate how many quiz items must be submitted and what topics they must assess]
                 </li>
@@ -665,7 +671,7 @@
             <li>
                 [Quiz questions should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -673,7 +679,7 @@
             <li>
                 [Quiz questions should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if there are multiple deliverables]
                 </li>
@@ -686,13 +692,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_14">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "13": {
+            "title": "TOA - Presentation",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will make a
             <strong>presentation </strong>that
             
@@ -711,7 +717,7 @@
             <li>
                 [Presentation should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether it will be completed individually or by group]
                 </li>
@@ -725,7 +731,7 @@
             <li>
                 [Presentation should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool that students will use and how they will present, with optional tutorials to utilize].
                 </li>
@@ -736,7 +742,7 @@
             <li>
                 [Presentation should show clear understanding of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any high-level topics to cover and when].
                 </li>
@@ -744,7 +750,7 @@
             <li>
                 [Presentation should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If group presentation, then include expectations of members as well as criteria for grading individuals
                         and groups]
@@ -757,13 +763,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_15">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "14": {
+            "title": "TOA - Case Study",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>Work with your
             <strong>group</strong> to
             <strong>analyze</strong> the various factors of the
@@ -781,7 +787,7 @@
             <li>
                 [Team should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the format of the case; e.g. Is it a simplified mini case? Multiple complex cases requiring
                         teams to make decisions with limited information?]
@@ -800,7 +806,7 @@
             <li>
                 [Team should utilize the appropriate tool(s) to organize, share, and present findings]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool that students will use to collaborate, if any; and, how they will share their solutions,
                         with optional tutorials to utilize].
@@ -812,7 +818,7 @@
             <li>
                 [Team should demonstrate clear understanding of topics]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any high-level topics to cover and when].
                 </li>
@@ -820,7 +826,7 @@
             <li>
                 [Team should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If group presentation, then include expectations of members as well as criteria for grading individuals
                         and groups]
@@ -833,13 +839,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_16">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "15": {
+            "title": "TOA - Field Experience",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>
             <strong>Conduct</strong> relevant and authentic
             [indicate and
@@ -861,7 +867,7 @@
             <li>
                 [Team or Individual should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any unique requirements; e.g. sharing experiences with others in discussion forums or on social
                         media]
@@ -874,7 +880,7 @@
             <li>
                 [Team or Individual [specify] should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify tools to be used for knowledge sharing, collaborating and sharing report]
                 </li>
@@ -882,7 +888,7 @@
             <li>
                 [Team or Individual [specify] should demonstrate clear understanding of topics]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any intended topics or abilities needing to be captured in report]
                 </li>
@@ -890,7 +896,7 @@
             <li>
                 [Team or Individual [specify] should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify format of report; e.g. written, presentation (asynchronous or synchronous), or video]
                 </li>
@@ -902,13 +908,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_17">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "16": {
+            "title": "TOA - Group Problem Solving",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>Work together in your
             <strong>groups</strong> to
             <strong>discover and organize </strong>
@@ -927,7 +933,7 @@
             <li>
                 [Group should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify if groups need to be arranged by students]
                 </li>
@@ -941,7 +947,7 @@
             <li>
                 [Group should utilize the appropriate tool(s) for collaboration and knowledge sharing]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify tool and/or resources to be used for group collaboration and knowledge sharing]
                 </li>
@@ -949,7 +955,7 @@
             <li>
                 [Group should show clear understanding of topics]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any intended topics or competencies that will be assessed]
                 </li>
@@ -957,7 +963,7 @@
             <li>
                 [Group should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify or include a rubric defining how students are to be graded both individually and collectively]
                 </li>
@@ -966,12 +972,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
-<div id="template_18">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        </p>"
+        },
+
+        "17": {
+            "title": "TOA - Group Project",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>As a group,
             <strong>work together</strong> to synthesize, analyze, and
             <strong>create</strong> a
@@ -988,7 +995,7 @@
             <li>
                 [Groups should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify how students are grouped, if not done already]
                 </li>
@@ -1008,7 +1015,7 @@
             <li>
                 [Group should utilize the appropriate resources and tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Explain what resources are acceptable for research; e.g. scholarly, popular, expert interview, etc.]
                 </li>.
@@ -1019,7 +1026,7 @@
             <li>
                 [Group should demonstrate clear understanding of topics]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any intended topics or competencies that will be assessed]
                 </li>.
@@ -1027,7 +1034,7 @@
             <li>
                 [Group should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any formatting requirements or time/length restrictions]
                 </li>
@@ -1045,14 +1052,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>>
+        </p>"
+        },
 
-
-<div id="template_19">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "18": {
+            "title": "TOA - Icebreaker",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>
             <strong>Introduce yourselves to each other and</strong> to your
             <strong>instructor</strong>. The purpose of this activity is to prepare personal connections and to promote a culture
@@ -1066,7 +1072,7 @@
             <li>
                 [Students should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate criteria; e.g. specific questions, sharing a learning plan, a researched introduction from
                         their profession, pictures of themselves, research and share takeaways about a class topic, etc.]
@@ -1081,7 +1087,7 @@
             <li>
                 [Students should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any tools needed for collaboration, if outside I-Learn]
                 </li>.
@@ -1089,7 +1095,7 @@
             <li>
                 [Students should show respect and courtesy to their peers]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any courtesy or etiquette requirements]
                 </li>
@@ -1100,7 +1106,7 @@
             <li>
                 [Students will adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any style, length or formatting requirements]
                 </li>
@@ -1112,14 +1118,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_20">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "19": {
+            "title": "TOA - Insight Sharing",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>take turns sharing</strong>
             [indicate and
@@ -1136,7 +1141,7 @@
             <li>
                 [Students should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify what insights to share; e.g. spiritual thoughts, skill tips, public relations journal/blogs,
                         favorite video share, experience with subject matter, etc.]
@@ -1152,7 +1157,7 @@
             <li>
                 [Students should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any tools needed for collaboration, if outside I-Learn]
                 </li>.
@@ -1160,7 +1165,7 @@
             <li>
                 [Students will adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any style, length or formatting requirements]
                 </li>
@@ -1172,14 +1177,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_21">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "20": {
+            "title": "TOA - Jigsaw Teaching",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>Students will be arranged into small groups to research
             [indicate topic]
             <strong>Each</strong> group
@@ -1204,7 +1208,7 @@
             <li>
                 [Group members should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any readings, key questions or principles, or other guidelines to direct research.]
                 </li>
@@ -1229,7 +1233,7 @@
             <li>
                 [Group members should utilize the appropriate tool(s) for collaboration and presenting]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate tools for collaboration, sharing and future presenting]
                 </li>.
@@ -1237,7 +1241,7 @@
             <li>
                 [Group members should demonstrate clear understanding of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any intended topics or competencies that will be assessed]
                 </li>
@@ -1245,7 +1249,7 @@
             <li>
                 [Group members should adhere to the submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Include all grading criteria across the multiple steps as well as how individuals and/or groups will
                         be assessed]
@@ -1255,14 +1259,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_22">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "21": {
+            "title": "TOA - Peer Accountability",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>work with</strong>
             [indicate, “a chosen” or “an assigned”]
@@ -1279,7 +1282,7 @@
             <li>
                 [Student pairs should report to one another using the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify format and scope of reporting; e.g. learning contracts, peer reading checks, milestone reports,
                         peer tutoring, performance feedback, etc.]
@@ -1297,7 +1300,7 @@
             <li>
                 [Student pairs should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify if any tools are required, especially if outside I-Learn]
                 </li>.
@@ -1306,14 +1309,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_23">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "22": {
+            "title": "TOA - Peer Feedback",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>offer</strong> and
             <strong>receive feedback from other students</strong> on their
@@ -1330,7 +1332,7 @@
             <li>
                 [Feedback offered to peers should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Include rubric specifying what meaningful feedback should address and include]
                 </li>
@@ -1345,7 +1347,7 @@
             <li>
                 [Feedback offered to peers should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any tool being used, especially if outside of I-Learn]
                 </li>.
@@ -1353,7 +1355,7 @@
             <li>
                 [Feedback offered to peers should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate if projects are to be reviewed individually or by groups]
                 </li>
@@ -1365,14 +1367,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_24">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "23": {
+            "title": "TOA - Q&amp;A/Support Forum",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this forum, you are invited to
             <strong>post</strong> your
             <strong>questions to</strong> the
@@ -1380,7 +1381,7 @@
                 <strong>highlight</strong> forum type; e.g. class, unit, topic-based support forum, or Question and Answer board].
             You are encouraged to
             <strong>support and help each other</strong> by responding to other's questions. Your
-            [specify "instructor" or "TA"]
+            [specify 'instructor' or 'TA']
             [indicate instructor’s and/or TA's role in this activity].</p>
         <h2>Instructions</h2>
         <p>To successfully complete the
@@ -1390,7 +1391,7 @@
             <li>
                 [If posting a question, students should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate if a specific process should be followed; e.g. forward questions to a partner first, then a
                         group, then the class if still unanswered]
@@ -1409,7 +1410,7 @@
             <li>
                 [If posting a question, students should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the location of the forum (if using I-Learn)—emphasizing if it is course-wide, module specific,
                         or activity specific]
@@ -1422,14 +1423,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_25">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "24": {
+            "title": "TOA - Role Play Discussion",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will work with an assigned group to
             <strong>discuss</strong>
             [indicate and
@@ -1446,7 +1446,7 @@
             <li>
                 [Students should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate to students what about their roles they need to understand]
                 </li>
@@ -1461,7 +1461,7 @@
             <li>
                 [Students should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any tools used for discussion, especially if outside of I-Learn and synchronous]
                 </li>.
@@ -1469,7 +1469,7 @@
             <li>
                 [Students should demonstrate clear understanding of the topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any intended topics or competencies that will be assessed]
                 </li>
@@ -1477,7 +1477,7 @@
             <li>
                 [Students should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any unique submission requirements]
                 </li>
@@ -1489,14 +1489,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_26">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "25": {
+            "title": "TOA - Structured Debate",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             [specify and
                 <strong>highlight</strong> “be assigned” or “select”] a
@@ -1517,7 +1516,7 @@
             <li>
                 [Students should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether position is assigned or chosen; what must they research]
                 </li>
@@ -1544,7 +1543,7 @@
             <li>
                 [Students should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify whether it is asynchronous or synchronous as well as what tools will be used; e.g. I-Learn discussion
                         boards, live sessions using Zoom, round robin emails, etc.]
@@ -1553,7 +1552,7 @@
             <li>
                 [Students should demonstrate clear understanding of the underlying topic(s) being debated]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any intended topics or competencies that will be assessed]
                 </li>
@@ -1561,7 +1560,7 @@
             <li>
                 [Students should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any other grading criteria not previously specified]
                 </li>
@@ -1570,14 +1569,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_27">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "26": {
+            "title": "TOA - Study Group",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will work with your organized
             <strong>small group</strong> to
             <strong>review</strong>
@@ -1593,7 +1591,7 @@
             <li>
                 [Study groups should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify any assigned activities; e.g. complete group assignments, study for assessments, create topic
                         definitions document, etc.]
@@ -1609,7 +1607,7 @@
             <li>
                 [Study groups should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Provide any needed resources or tools to help facilitate group study and collaboration; if possible,
                         provide several recommendations for both asynchronous and synchronous tools]
@@ -1618,7 +1616,7 @@
             <li>
                 [Study groups should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If graded, specify how individuals and/or groups will be assessed through a rubric]
                 </li>
@@ -1627,14 +1625,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_28">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "27": {
+            "title": "TOA - Topic Discussion",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>engage</strong> in a
             <strong>discussion around</strong>
@@ -1651,7 +1648,7 @@
             <li>
                 [Students should post and respond to posts according to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate who will moderate discussion]
                 </li>
@@ -1666,7 +1663,7 @@
             <li>
                 [Students should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate if conducted asynchronously or synchronously; specify if done through I-Learn or using an external
                         tool]
@@ -1675,7 +1672,7 @@
             <li>
                 [Students should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate timeline for posting and responding to posts, if both are required]
                 </li>
@@ -1688,14 +1685,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_29">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "28": {
+            "title": "Ponder/Prove - Unanswered Questions",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>share</strong> any
             <strong>unanswered</strong> or ongoing
@@ -1714,7 +1710,7 @@
             <li>
                 [Questions should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any unique steps or resources needed to complete]
                 </li>
@@ -1728,7 +1724,7 @@
             <li>
                 [Questions should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it]
                 </li>.
@@ -1736,7 +1732,7 @@
             <li>
                 [Questions should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -1750,14 +1746,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_30">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "29": {
+            "title": "Ponder/Prove - Quiz",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>complete</strong> a
             <strong>quiz to demonstrate</strong>
@@ -1773,7 +1768,7 @@
             <li>
                 [Quiz reponses should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether it will be completed individually or by group]
                 </li>
@@ -1787,7 +1782,7 @@
             <li>
                 [Quiz reponses should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it]
                 </li>
@@ -1795,7 +1790,7 @@
             <li>
                 [Quiz reponses should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If group quiz, then include expectations of members as well as criteria for grading individuals and
                         groups]
@@ -1805,14 +1800,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_31">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "30": {
+            "title": "Ponder/Prove - Exam",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>complete</strong> an
             <strong>exam to demonstrate</strong>
@@ -1828,7 +1822,7 @@
             <li>
                 [Exam reponses should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether it will be completed individually or by group]
                 </li>
@@ -1839,7 +1833,7 @@
             <li>
                 [Exam reponses should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it—e.g. Proctoring software]
                 </li>
@@ -1847,7 +1841,7 @@
             <li>
                 [Exam reponses should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If group exam, then include expectations of members as well as criteria for grading individuals and
                         groups]
@@ -1860,14 +1854,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_32">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "31": {
+            "title": "Ponder/Prove - Presentation",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will make a
             <strong>presentation</strong> that
             <strong>
@@ -1890,7 +1883,7 @@
             <li>
                 [Presentation should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate whether it will be completed individually or by group]
                 </li>
@@ -1904,7 +1897,7 @@
             <li>
                 [Presentation should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool that students will use and how they will present, with optional tutorials to utilize]
                 </li>
@@ -1915,7 +1908,7 @@
             <li>
                 [Presentation should show clear understanding/competency of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any high-level topics to cover and when]
                 </li>
@@ -1923,7 +1916,7 @@
             <li>
                 [Presentation should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [If group presentation, then include expectations of members as well as criteria for grading individuals
                         and groups]
@@ -1936,14 +1929,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_33">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "32": {
+            "title": "Ponder/Prove - Project",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>complete</strong> a
             <strong>project that
@@ -1963,7 +1955,7 @@
             <li>
                 [Project should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -1980,7 +1972,7 @@
             <li>
                 [Project should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it]
                 </li>
@@ -1991,7 +1983,7 @@
             <li>
                 [Project should show clear understanding/competency of topic(s)/skill(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate specific topics/skills that should be reflected]
                 </li>
@@ -1999,7 +1991,7 @@
             <li>
                 [Project should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -2013,13 +2005,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_34">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "33": {
+            "title": "Ponder/Prove - Essay",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>write</strong> an
             <strong>essay that
@@ -2040,7 +2032,7 @@
             <li>
                 [Essay should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -2057,7 +2049,7 @@
             <li>
                 [Essay should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -2065,7 +2057,7 @@
             <li>
                 [Essay should show clear understanding/competency of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate specific topics to cover and, if needed, when]
                 </li>
@@ -2073,7 +2065,7 @@
             <li>
                 [Essay should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -2087,14 +2079,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_35">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "34": {
+            "title": "Ponder/Prove - Worksheet-Workbook",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>complete</strong> a
             <strong>
@@ -2114,7 +2105,7 @@
             <li>
                 [Worksheet/Workbook should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -2128,7 +2119,7 @@
             <li>
                 [Worksheet/Workbook should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -2136,7 +2127,7 @@
             <li>
                 [Worksheet/Workbook should show clear understanding/competency of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate specific topics to cover and, if needed, when]
                 </li>
@@ -2144,7 +2135,7 @@
             <li>
                 [Worksheet/Workbook should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -2158,14 +2149,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-
-<div id="template_36">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "35": {
+            "title": "Ponder/Prove - Portfolio",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>complete</strong> a
             <strong>portfolio that
@@ -2186,7 +2176,7 @@
             <li>
                 [Portfolio should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly, what previous artifacts should be included]
                 </li>
@@ -2204,7 +2194,7 @@
             <li>
                 [Portfolio should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -2215,7 +2205,7 @@
             <li>
                 [Portfolio should show clear understanding/competency of topic(s)/skill(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate specific topics/skills that should be reflected]
                 </li>
@@ -2223,7 +2213,7 @@
             <li>
                 [Portfolio should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -2239,11 +2229,8 @@
         <p>
             (You may also combine this with the submission or other requirements specified above)
         </p>
-    </div>
-</div>
 
-<div id="template_37">
-    <div class="byui <%= courseClass %>">
+
         <p>To successfully complete this activity, follow these steps:</p>
         <ol>
             <li>
@@ -2262,13 +2249,13 @@
         <h2>Next Steps (Optional)</h2>
         <p>After successfully completing this activity,
             [specify any next steps or relevant future activities]
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_38">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "36": {
+            "title": "Generic Quiz Instructions",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             <strong>write a reflection on</strong>
              [describe and
@@ -2284,7 +2271,7 @@
             <li>
                 [Write-up should adhere to the prescribed method]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate required steps to complete—particularly if multiple documents/deliverables are required]
                 </li>
@@ -2298,7 +2285,7 @@
             <li>
                 [Write-up should utilize the appropriate tool(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate the tool, if any, that students will use and how they will use it].
                 </li>
@@ -2306,7 +2293,7 @@
             <li>
                 [Write-up should show thoughtful reflection of topic(s)]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Indicate any previous topics, activities, or behaviors that should be reflected]
                 </li>
@@ -2314,7 +2301,7 @@
             <li>
                 [Write-up should adhere to submission requirements]
             </li>
-            <ol type="a">
+            <ol type='a'>
                 <li>
                     [Specify timeline for submission, especially if revisions are allowed, peer feedback is solicited, or
                         if there are multiple deliverables]
@@ -2328,13 +2315,13 @@
         <h2>Grading Rubric</h2>
         <p>
             (You may also combine this with the submission or other requirements specified above)
-        </p>
-    </div>
-</div>
+        </p>"
+        },
 
-<div id="template_39">
-    <div class="byui <%= courseClass %>">
-        <h2>Overview</h2>
+        "37": {
+            "title": "Ponder/Prove - Reflective Write-Up",
+            "banner": "",
+            "template": "<h2>Overview</h2>
         <p>In this activity, you will
             [specify deliverable/action to be taken]in
             [time period, if any]. Students must
@@ -2362,6 +2349,6 @@
         </ol>
         <h3>Grading Rubric (You may also combine this with the submission or other requirements specified above)</h3>
         <h3>You will be graded using the criteria below
-            [include criteria and levels].</h3>
-    </div>
-</div>
+            [include criteria and levels].</h3>"
+
+}

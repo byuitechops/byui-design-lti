@@ -22,6 +22,32 @@ function updateButton() {
 
 $('#button input:checkbox').change(updateButton)
 
+// Callout generator
+function updateCallout() {
+  var content = $('#callout textarea').val(),
+    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
+
+  // remove existing position & size classes
+  classesToRemove.forEach((classToRemove) => {
+    if ($('#calloutOut>span').hasClass(classToRemove)) {
+      $('#calloutOut>span').removeClass(classToRemove);
+    }
+  });
+
+  // add new position & size classes
+  $('#calloutOut>span').addClass($('#callout .position input[type="radio"]:checked').attr('value'));
+  $('#calloutOut>span').addClass($('#callout .size input[type="radio"]:checked').attr('value'));
+  if ($('#callout input:checkbox').is(':checked')) {
+    $('#calloutOut>span').addClass("shaded")
+  } else {
+    $('#calloutOut>span').removeClass("shaded")
+  }
+  if (content != '')
+    $('#calloutOut span em').text(content);
+}
+
+$('#callout input:checkbox').change(updateCallout)
+
 // Change pages
 function changeFocus(id) {
   if (!$("#" + id).hasClass('visible')) {
@@ -40,26 +66,6 @@ function updateAccordion() {
   var content = $('#accordion textarea').val();
   $('.accordion h3').text(heading);
   $('.accordion div').html(content);
-}
-
-// Callout generator
-function updateCallout() {
-  var content = $('#callout textarea').val(),
-    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
-
-  // remove existing position & size classes
-  classesToRemove.forEach((classToRemove) => {
-    if ($('#calloutOut>span').hasClass(classToRemove)) {
-      $('#calloutOut>span').removeClass(classToRemove);
-    }
-  });
-
-  // add new position & zise classes
-  $('#calloutOut>span').addClass($('#callout .position input[type="radio"]:checked').attr('value'));
-  $('#calloutOut>span').addClass($('#callout .size input[type="radio"]:checked').attr('value'));
-
-  if (content != '')
-    $('#calloutOut span em').text(content);
 }
 
 // Column generator
@@ -126,6 +132,39 @@ function updateImage() {
   $('#imageOut img').attr('alt', alt);
   $('#imageOut img').attr('src', source);
   $('#imageOut span').html(caption);
+}
+
+function updateVideo() {
+  var source = $('#video .option input[placeholder="Source URL"]').val(),
+    alt = $('#video .option input[placeholder="Alt Text"]').val(),
+    caption = $('#video .option input[placeholder="Caption Text"]').val(),
+    classesToRemove = ['left', 'right', 'center', 'full', 'half', 'quarter'];
+
+  // remove size & position classes from img
+  classesToRemove.forEach((classToRemove) => {
+    if ($('#videoOut>img').hasClass(classToRemove)) {
+      $('#videoOut>img').removeClass(classToRemove);
+    }
+  });
+  // add size & position classes
+  $('#videoOut>img').addClass($('#video .position input[type="radio"]:checked').attr('value'));
+  $('#videoOut>img').addClass($('#video .size input[type="radio"]:checked').attr('value'));
+
+  // add/remove clearfix
+  if ($('#video .option input[type="checkbox"]').is(':checked')) {
+    $('#videoOut').addClass("clearfix");
+  } else {
+    $('#videoOut').removeClass("clearfix");
+  }
+
+  // Don't set alt to empty string
+  if (source == '') {
+    source = '...'
+  }
+
+  $('#videoOut img').attr('alt', alt);
+  $('#videoOut img').attr('src', source);
+  $('#videoOut span').html(caption);
 }
 
 // generate input tags & slides
