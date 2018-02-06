@@ -37,7 +37,7 @@
             <nav>
                 <a href="#accordion">Accordion</a>
                 <a href="#banner">Activity Banner</a>
-                <a href="#bannerImg">Banner Img</a>
+                <!-- <a href="#bannerImg">Banner Image</a> -->
                 <a href="#button">Button</a>
                 <a href="#callout">Callout</a>
                 <a href="#columns">Columns</a>
@@ -60,10 +60,12 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <input type="text" placeholder="Heading Text" onkeyup="updateAccordion()">
                             <textarea placeholder="Content Text" onkeyup="updateAccordion()"></textarea>
                         </div>
                         <div class="preview" id="accordionOut">
+                            <h4>Preview:</h4>                            
                             <div class="accordion" id="this_page_1">
                                 <h3>Section 1</h3>
                                 <div>
@@ -84,6 +86,7 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <select id="activitySelected">
                                 <optgroup label="Prepare">
                                     <option value="prepare caseStudy">Case Study</option>
@@ -123,6 +126,7 @@
                             </select>
                         </div>
                         <div class="preview">
+                            <h4>Preview:</h4>                            
                             <div class="byui" id="bannerOut">
                                 <h2 class="activity caseStudy">Case Study</h2>
                             </div>
@@ -133,24 +137,28 @@
                     </div>
                 </div>
 
-                <div id="bannerImg">
+                <!-- <div id="bannerImg">
                     <h2>Banner Image</h2>
                     <div>
                         <p>Guidelines</p>
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
+                            <p>Are we using these?</p>
                         </div>
                         <div class="preview" id="bannerImgOut">
+                            <h4>Preview:</h4>                            
                             <div id="header">
-                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/template/courseBanner.jpg" alt="Course Banner" />
+                                <img src="https://byui.instructure.com/courses/<%= courseNumber %>/file_contents/course%20files/Web%20Files/homeImage.jpg"
+                                    alt="Course Banner" />
                             </div>
                         </div>
                     </div>
                     <div>
                         <a class="Button btn btn-primary" href="#" onclick="respond('bannerImg')">Insert Banner Image</a>
                     </div>
-                </div>
+                </div> -->
 
                 <div id="button">
                     <h2>Button</h2>
@@ -160,6 +168,7 @@
 
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <input type="text" placeholder="Button Text" oninput="updateButton()">
                             <input type="text" placeholder="Button HTML" oninput="updateButton()">
                             <input type="checkbox" id="blue">
@@ -167,6 +176,7 @@
                         </div>
                         <div>
                             <div class="preview" id="buttonOut">
+                            <h4>Preview:</h4>                                
                                 <a class="Button" href="#">Button Text</a>
                             </div>
                         </div>
@@ -183,6 +193,7 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <div class="position">
                                 <input type="radio" name="calloutPosition" value="left" onchange="updateCallout()" id="calloutPosLeft">
                                 <label for="calloutPosLeft">Left</label>
@@ -208,6 +219,7 @@
                             <label for="shaded">Shaded</label>
                         </div>
                         <div class="preview">
+                            <h4>Preview:</h4>                            
                             <p>At vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
                                 augue duis dolore te feugait nulla
                                 <span id="calloutOut">
@@ -235,9 +247,11 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <input type="text" min="1" max="3" placeholder="Number of columns" onkeyup="updateColumn()">
                         </div>
                         <div class="preview" id="columnsOut">
+                            <h4>Preview:</h4>                            
                             <div class="content-box">
                                 <div class="grid-row">
                                     <div class="col-xs-6">
@@ -268,9 +282,11 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <p>Are we using these?</p>
                         </div>
                         <div class="preview" id="contentBoxOut">
+                            <h4>Preview:</h4>                            
                             <div class="content-box pad-box-mini border border-trbl border-round">
                                 <p>Your content here</p>
                             </div>
@@ -288,8 +304,10 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <!-- <h4>Select options:</h4>                             -->
                         </div>
                         <div class="preview" id="definitionOut">
+                            <h4>Preview:</h4>                            
                             <dl>
                                 <dt>Term (n) </dt>
                                 <dd>1. Definition </dd>
@@ -308,11 +326,13 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <input type="text" placeholder="Dialog Title" onkeyup="updateDialog()">
                             <input type="text" placeholder="Prompt Text" onkeyup="updateDialog()">
                             <textarea placeholder="Content" onkeyup="updateDialog()"></textarea>
                         </div>
                         <div class="preview" id="dialogOut">
+                            <h4>Preview:</h4>                            
                             <div id="dialog_for_link_1" title="Title" class="enhanceable_content dialog">dialog</div>
                             <p>
                                 <a id="link_1" class="Button" href="#dialog_for_link_1">prompt</a>
@@ -331,6 +351,7 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <div class="position">
                                 <input type="radio" name="ImgPosition" value="left" onchange="updateImage()" id="imagePosLeft">
                                 <label for="imagePosLeft">Left</label>
@@ -354,6 +375,7 @@
                             <input type="text" placeholder="Caption Text" oninput="updateImage()">
                         </div>
                         <div class="preview" id="imageOut">
+                            <h4>Preview:</h4>                            
                             <img class="left quarter" src="" alt="...">
                             <span class="caption">Insert Caption Text Here</span>
                         </div>
@@ -370,6 +392,7 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <div class="position">
                                 <input type="radio" name="VidPosition" value="left" onchange="updateVideo()" id="videoPosLeft">
                                 <label for="videoPosLeft">Left</label>
@@ -393,6 +416,7 @@
                             <input type="text" placeholder="Caption Text" oninput="updateVideo()">
                         </div>
                         <div class="preview" id="videoOut">
+                            <h4>Preview:</h4>                            
                             <span class="caption">Insert Caption Text Here</span>
                         </div>
                     </div>
@@ -408,11 +432,12 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <input type="string" id="numSlides" placeholder="Number of slides?" onkeyup="updateSlideCount()">
-                            <input type="string" id="maxHeight" placeholder="Max height" onkeyup="updateMaxHeight()">
                             <!-- <input type="string" id="" onkeyup="updateImgCarousel()" placeholder="Img URL"> -->
                         </div>
                         <div class="preview" id="imgCarouselOut">
+                            <h4>Preview:</h4>                            
                             <div class="carousel">
                                 <!-- <div class="slide">
                                     Insert image or content
@@ -433,11 +458,13 @@
 
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <input type="text" placeholder="Text" onkeyup="updatePopover()">
                             <textarea placeholder="Popover Text" onkeyup="updatePopover()"></textarea>
                         </div>
                         <div>
                             <div class="preview" id="popoverOut">
+                            <h4>Preview:</h4>                                
                                 <a data-tooltip='{"tooltipClass":"popover popover-padded", "position":"right"}' title="Oh hello!">
                                     Text with accessible popover
                                 </a>
@@ -456,10 +483,12 @@
                     </div>
                     <div class="row">
                         <div class="option">
+                            <h4>Select options:</h4>                            
                             <input type="checkbox" onchange="updateTable()" id="tableStriped">
                             <label for="tableStriped">Striped</label>
                         </div>
                         <div class="preview" id="tableOut">
+                            <h4>Preview:</h4>                            
                             <table class="ic-Table">
                                 <tbody>
                                     <tr>
@@ -498,9 +527,11 @@
       ****** No comments allowed in the featureOut element *******
       <div class="row" id="feature">
         <div class="option">
+                            <h4>Select options:</h4>            
           <a class="Button btn btn-primary" href="#" onclick="respond('feature')">Insert Feature</a>
         </div>
         <div class="preview" id="featureOut">
+                            <h4>Preview:</h4>            
            Feature HTML goes here 
         </div>
       </div>
@@ -516,7 +547,9 @@
         <div id="orgTemplate">
             <div class="row">
                 <div class="option">
-                    <select id="activitySelected2">
+                        <h4>Select options:</h4>                    
+                        <label for="avtivitySelected2" class="templateLabel">Banner:</label>
+                        <select id="activitySelected2">
                         <optgroup label="Prepare">
                             <option value="prepare caseStudy">Case Study</option>
                             <option value="prepare checkUnderstanding">Check-Your-Understanding</option>
@@ -555,6 +588,7 @@
                         </optgroup>
                     </select>
                     <br>
+                    <label for="selectTemplate" class="templateLabel">Page Template:</label>                    
                     <select id="selectTemplate">
                         <option disabled selected value>Select a template</option>
                         <option value="1">Generic Activity Instructions</option>
@@ -600,6 +634,7 @@
                     <a target="_blank" href="https://docs.google.com/document/d/1ZoDam0yGbEkZX9i1o1ognWJFp6Jqh9IP6eeyOR23oj4/">View docs</a>
                 </div>
                 <div class="preview" id="customTemplateOut">
+                    <h4>Preview:</h4>                    
                     <div class="byui" id="bannerOut2">
                         
                     </div>
@@ -621,6 +656,7 @@
                 <div class="option">
                 </div>
                 <div class="preview" id="homeTemplateOut">
+                    <h4>Preview:</h4>                    
                     <%- homePage %>
                 </div>
             </div>
@@ -630,9 +666,11 @@
         </div>
         <!--<div class="row" id="templateSmall">
             <div class="option">
+                            <h4>Select options:</h4>                
                 <a class="Button btn btn-primary" href="#" onclick="respond('templateSmall')">Insert Page Template</a>
             </div>
             <div class="preview" id="templateSmallOut">
+                            <h4>Preview:</h4>                
                 <div class="byui <%= courseClass %>">
                     <div id="header">
                         <img src="https://byui.instructure.com/courses/773/files/129575/preview" alt="Banner" width="3000" height="272" data-api-endpoint="https://byui.instructure.com/api/v1/courses/773/files/129575" data-api-returntype="File" />
